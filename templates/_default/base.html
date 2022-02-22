@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.Params.title }}</title>
+  <link rel="icon" href="images/logos/favicon.svg">
+
+  <!-- CSS -->
+  <!-- TODO: do we really need this many icon sets? -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
+  <!-- JS -->
+  <script src="{{ "js/navbar.js" }}" type="text/javascript"></script>
+  <script src="{{ "js/scroll.js" }}" type="text/javascript"></script>
+  <script>{{ partial "fathom.js" . | safeJS }}</script>
+
+</head>
+
+<body>
+  <a id="top"></a>
+  <section class="hero is-info">
+    <div class="hero-head">  <div class="columns is-mobile is-centered my-0">
+      <div class="column is-11-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd px-0 py-0">  {{ partial "navbar.html" . | safeHTML }}
+      </div>
+    </div>
+  </section>
+
+
+  <section class="columns is-mobile is-centered my-0 has-background-backdrop is-fullheight-with-footer-and-navbar">
+    <div class="column is-12-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd has-box-shadow-x px-0 py-0 has-background-light">
+      <section class="hero{% if is_fullpage %} is-fullheight-with-navbar {% endif %}">
+        {{block "fullheight" $}}{{end}}
+      </section>
+        {{block "body" $}}{{end}}
+    </div>
+  </section>
+
+  {{ partial "footer.html" . | safeHTML }}
+</body>
+</html>

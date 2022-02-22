@@ -1,0 +1,33 @@
+title = "Example website"
+urls = ["gemini://example.com"]
+
+[params]
+fathom_id = "testvalue"
+
+[feeds]
+"/" = "Example feed"
+
+[permalinks]
+"/" = "/{{ .Date.Format `2006/01/02` }}/{{ path.Base .Path }}/"
+
+[[tasks]]
+input = [".gmi"]
+output = ".gmi"
+template = ".gmi"
+static_dir = "static"
+output_dir = "public"
+
+[[tasks]]
+input = [".html"]
+output = ".html"
+template = ".html"
+preprocess.md = "markdown"
+static_dir = "static"
+output_dir = "public"
+
+[[tasks]]
+input = [".scss"]
+output = ".css"
+preprocess.scss = "sassc"
+output_dir = "public"
+ugly_urls = true

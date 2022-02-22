@@ -1,0 +1,53 @@
+{{define "fullheight"}}
+<div class="hero-body px-0 py-0" style="background-image: url('images/backgrounds/background-original.png'); background-size:cover; background-position:top; display:flex; flex-direction:column">
+  <div style="flex:1; display:flex; flex-direction:column; width:100%">
+
+    <div style="flex:3; display:flex; flex-direction:column;">
+      <div class="columns is-mobile is-centered is-vcentered" style="flex:1">
+        <div class="column is-three-quarters-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd has-text-centered mt-6">
+          <figure class="image has-text-centered">
+            <img src="images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="is-hidden-desktop mt-4"></div>
+    <div class="is-hidden-mobile mt-6 pt-5"></div>
+    <div style="flex:1; display:flex; flex-direction:column;" class="has-text-centered">
+      <p class="is-size-5 mb-4 has-text-shadowed has-text-white">Are You...</p>
+      <div class="columns is-mobile is-centered">
+        <div class="column is-5 is-10-mobile">
+          <div class="columns is-centered">
+            <div class="column is-narrow has-equal-height">
+              <a href="/our_services#register_client">
+                <button class="button is-medium is-warning is-box-button has-text-shadowed is-rounded">
+                  <p>A Researcher</p>
+                </button>
+              </a>
+            </div>
+            <div class="column is-narrow has-equal-height">
+              <a href="develop_with_us#register_developer">
+                <button class="button is-medium is-primary is-inverted is-outlined is-box-button has-text-shadowed is-rounded">
+                  <p>A Developer</p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+		<div class="is-hidden-touch" style="background-image: url('/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
+		</div>
+		<div class="is-hidden-desktop" style="background-image: url('/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
+		</div>
+    <div class="has-text-centered pb-1" style="margin-top: -50px">
+      <a href="#register_client" class="title is-2 fas fa-chevron-down has-text-white"></a>
+    </div>
+	</div>
+</div>
+{{end}}
+
+{{define "body"}}
+    {{ .Params.cool_description }}
+{{end}}

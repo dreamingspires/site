@@ -1,0 +1,17 @@
+{{ `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+<id>{{ index site.URLs 0 }}{{ .Path }}</id>
+<title>{{ .Title }}</title>
+<updated>{{ .Updated.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+<link href="{{ index site.URLs 0 | safeURL }}{{ .Path }}" rel="alternate"/>
+{{ range .Entries }}<entry>
+	<id>{{ index site.URLs 0 }}{{ .Path }}</id>
+	<title>{{ .Title }}</title>
+	<updated>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</updated>
+	{{- $permalink := .Path }}
+	{{- range site.URLs }}
+	<link href="{{ . | safeURL }}{{ $permalink }}" rel="alternate"/>
+	{{- end }}
+</entry>
+{{ end -}}
+</feed>
