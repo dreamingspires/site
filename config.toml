@@ -4,6 +4,27 @@ urls = ["gemini://example.com"]
 [params]
 fathom_id = "testvalue"
 
+[params.navbar]
+items = [
+	{ url = "/", name = "Home" },
+	{ url = "/our_services", name = "Our Services" },
+	{ url = "/portfolio", name = "Portfolio" },
+	{ url = "/develop_with_us", name = "Develop with Us" }
+]
+
+buttons = [
+	{ url = "/contact", name = "Contact Us" }
+]
+
+footer = [
+    { url = "/", name = "Home" },
+    { url = "/#about", name = "About" },
+    { url = "/developer_faq", name = "Developer FAQ" },
+    { url = "/client_faq", name = "Client FAQ" },
+    { url = "/contact", name = "Contact" },
+    { url = "/privacy_policy", name = "Privacy Policy" },
+]
+
 [feeds]
 "/" = "Example feed"
 
