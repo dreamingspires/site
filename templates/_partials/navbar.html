@@ -11,7 +11,7 @@
     <!-- mobile "contact us" button outside of navbar -->
     <div class="navbar-item is-hidden-tablet is-hidden-desktop is-hidden-fullhd" style="margin-left: auto">
       <div class="buttons">
-        {{ range $value := site.Params.navbar.buttons }}
+        {{ range $value := site.Params.nav.hotlinks }}
           <a href="{{ index $value "url" }}" class="button is-rounded is-warning" style="font-size: 0.9em">
             {{ index $value "name" }}
           </a>
@@ -30,7 +30,7 @@
     <div class="navbar-end">
 
       {{/* TODO: style these with some CSS instead */}}
-      {{ range $value := site.Params.navbar.items }}
+      {{ range $value := site.Params.nav.navbar }}
         <a href='{{ index $value "url" }}' style="font-size: 0.9em"
         class="navbar-item has-text-white
           {{ if (eq $.URL (index $value "url")) }}is-active{{ end }}
@@ -42,7 +42,7 @@
 
     <div class="navbar-item is-hidden-mobile">
       <div class="buttons">
-        {{ range $value := site.Params.navbar.buttons }}
+        {{ range $value := site.Params.nav.hotlinks }}
           <a href="{{ index $value "url" }}" class="button is-rounded is-warning" style="font-size: 0.9em">
             {{ index $value "name" }}
           </a>

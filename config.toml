@@ -4,15 +4,15 @@ urls = ["gemini://example.com"]
 [params]
 fathom_id = "testvalue"
 
-[params.navbar]
-items = [
+[params.nav]
+navbar = [
 	{ url = "/", name = "Home" },
 	{ url = "/our_services", name = "Our Services" },
 	{ url = "/portfolio", name = "Portfolio" },
 	{ url = "/develop_with_us", name = "Develop with Us" }
 ]
 
-buttons = [
+hotlinks = [
 	{ url = "/contact", name = "Contact Us" }
 ]
 

@@ -1,0 +1,22 @@
+<footer class="footer has-background-black has-text-light mb-0 pb-0 pt-4">
+  <div class="my-5 is-hidden-mobile "></div>
+  <div class="content has-text-centered">
+
+  <div class="pb-1">
+  {{ range $value := site.Params.nav.footer}}
+    <a href="{{ index $value "url" }}">{{ index $value "name" }}</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  {{ end }}
+  </div>
+  <p>
+    <strong class="has-text-light">Dreaming Spires</strong>
+    &nbsp;&nbsp;&nbsp;
+    Copyright © {{ site.Generated.Format "2006" }}
+    &nbsp;&nbsp;&nbsp;
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+      <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png">
+    </a>
+    &nbsp;&nbsp;&nbsp;
+    Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+  </p>
+</footer>
