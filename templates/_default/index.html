@@ -1,12 +1,12 @@
 {{define "fullheight"}}
-<div class="hero-body px-0 py-0" style="background-image: url('images/backgrounds/background-original.png'); background-size:cover; background-position:top; display:flex; flex-direction:column">
+<div class="hero-body px-0 py-0" style="background-image: url('./assets/images/backgrounds/background-original.png'); background-size:cover; background-position:top; display:flex; flex-direction:column">
   <div style="flex:1; display:flex; flex-direction:column; width:100%">
 
     <div style="flex:3; display:flex; flex-direction:column;">
       <div class="columns is-mobile is-centered is-vcentered" style="flex:1">
         <div class="column is-three-quarters-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd has-text-centered mt-6">
           <figure class="image has-text-centered">
-            <img src="images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
+            <img src="./assets/images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
           </figure>
         </div>
       </div>
@@ -37,9 +37,9 @@
       </div>
     </div>
 
-		<div class="is-hidden-touch" style="background-image: url('/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
+		<div class="is-hidden-touch" style="background-image: url('./assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
 		</div>
-		<div class="is-hidden-desktop" style="background-image: url('/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
+		<div class="is-hidden-desktop" style="background-image: url('./assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
 		</div>
     <div class="has-text-centered pb-1" style="margin-top: -50px">
       <a href="#register_client" class="title is-2 fas fa-chevron-down has-text-white"></a>
@@ -49,5 +49,138 @@
 {{end}}
 
 {{define "body"}}
-    {{ .Params.cool_description }}
+<section id="page_1" class="section is-fullwidth is-medium has-background-info pt-6 pb-1 px-6">
+  <div class="columns">
+    <div class="column is-7-fullhd is-9-widescreen is-10-desktop has-text-light">
+      <h1 class="title has-text-light">Welcome to Dreaming Spires</h1>
+      <h2 class="subtitle has-text-primary is-italic">Bringing Programming Talent to Your Research</h2>
+      <div class="columns">
+        <div class="column is-1 is-hidden-mobile"></div>
+        <div class="column">
+          {{ range .Params.welcome_page.text }}
+            <p>{{ . }}</p><br>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="is-hidden-mobile mt-6"></div>
+  <div class="columns is-centered">
+    <div class="column is-9 is-11-tablet">
+      <div class="columns">
+        <div class="column is-half has-equal-height has-text-light">
+          <p class="is-size-5 has-text-weight-semibold">Perfect for Researchers...</p>
+
+          {{ range .Params.welcome_page.researcher_reasons }}
+          <p class="has-text-left py-3">
+            <span class="icon has-text-warning">
+              <i class="fas fa-check"></i>
+            </span>
+            {{ . }}
+          </p>
+          {{ end }}
+
+          <div class="is-hidden-mobile mt-6"></div>
+          <div class="columns is-mobile is-centered">
+            <div class="column is-narrow has-text-centered">
+              <p class="has-text-centered pt-4">Find out more as...</p>
+              <a class="pt-2" href="./our_services#register_client">
+                <button class="button is-normal is-warning has-background-warning-dark is-rounded is-fullwidth">
+                  <p>A Researcher</p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-half has-equal-height has-text-light">
+          <p class="is-size-5 has-text-weight-semibold">Ideal for Developers...</p>
+
+          {{ range .Params.welcome_page.developer_reasons }}
+          <p class="has-text-left py-3">
+            <span class="icon has-text-primary">
+              <i class="fas fa-check"></i>
+            </span>
+            {{ . }}
+          </p>
+          {{ end }}
+
+          <div class="is-hidden-mobile mt-6"></div>
+          <div class="columns is-mobile is-centered">
+            <div class="column is-narrow has-text-centered">
+              <p class="has-text-centered pt-4">Find out more as...</p>
+              <a class="pt-2" href="./develop_with_us#register_developer">
+                <button class="button is-normal is-primary has-background-primary-dark is-rounded is-fullwidth">
+                  <p>A Developer</p>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="is-hidden-mobile mt-5"></div>
+  <div class="has-text-centered">
+    <a href="#page_2" class="title is-2 fas fa-chevron-down has-text-white"></a>
+  </div>
+</section>
+
+<section id="page_2" class="section is-fullwidth is-medium has-background-light pt-6 pb-0 px-6">
+  <div class="column">
+    <h1 class="title has-text-dark">Our Development Process</h1>
+    <h2 class="subtitle has-text-primary is-italic">The Unique Dreaming Spires Model</h2>
+  </div>
+
+	<!-- Mobile timeline -->
+	<div class="columns is-centered is-hidden-tablet mt-2">
+		<div class="column is-11">
+      {% for i in range(7) %}
+        <div class="columns is-mobile is-vcentered">
+          <div class="column is-3 has-text-centered">
+            { timeline_logo(i) }
+          </div>
+          <div class="column is-9">
+            { timeline_text(i) }
+          </div>
+        </div>
+      {% endfor %}
+		</div>
+	</div>
+
+	<!-- Desktop timeline -->
+	<div class="columns is-centered is-hidden-mobile">
+		<div class="column is-11-tablet is-10-desktop is-9-widescreen is-9-fullhd">
+      <div style="display: grid; align-items: center; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 1fr">
+        {{ range $index, $entry := .Params.timeline }}
+          {{ if (eq (math.Mod $index 2) 1) }}
+            <div style="grid-column-end: span 5">
+            </div>
+            <div style="grid-column-end: span 2" class="has-text-centered">
+              <span class="icon is-large" style="color: {{ index $entry "colour" }}">
+                <i class="fas fa-3x {{ index $entry "logo" }}"></i>
+              </span>
+            </div>
+            <div style="grid-column-end: span 5">
+              {{ index $entry "text" | safeHTML }}
+            </div>
+          {{ else }}
+            <div style="grid-column-end: span 5">
+              {{ index $entry "text" | safeHTML }}
+            </div>
+            <div style="grid-column-end: span 2" class="has-text-centered">
+              <span class="icon is-large" style="color: {{ index $entry "colour" }}">
+                <i class="fas fa-3x {{ index $entry "logo" }}"></i>
+              </span>
+            </div>
+            <div style="grid-column-end: span 5">
+            </div>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="has-text-centered">
+    <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
+  </div>
+</section>
 {{end}}
