@@ -1,12 +1,12 @@
-{{define "fullheight"}}
-<div class="hero-body px-0 py-0" style="background-image: url('./assets/images/backgrounds/background-original.png'); background-size:cover; background-position:top; display:flex; flex-direction:column">
+{{ define "fullheight" }}
+<div class="hero-body px-0 py-0" style="background-image: url('/assets/images/backgrounds/background-original.png'); background-size:cover; background-position:top; display:flex; flex-direction:column">
   <div style="flex:1; display:flex; flex-direction:column; width:100%">
 
     <div style="flex:3; display:flex; flex-direction:column;">
       <div class="columns is-mobile is-centered is-vcentered" style="flex:1">
         <div class="column is-three-quarters-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd has-text-centered mt-6">
           <figure class="image has-text-centered">
-            <img src="./assets/images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
+            <img src="/assets/images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
           </figure>
         </div>
       </div>
@@ -37,18 +37,18 @@
       </div>
     </div>
 
-		<div class="is-hidden-touch" style="background-image: url('./assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
+		<div class="is-hidden-touch" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
 		</div>
-		<div class="is-hidden-desktop" style="background-image: url('./assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
+		<div class="is-hidden-desktop" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
 		</div>
     <div class="has-text-centered pb-1" style="margin-top: -50px">
       <a href="#register_client" class="title is-2 fas fa-chevron-down has-text-white"></a>
     </div>
 	</div>
 </div>
-{{end}}
+{{ end }}
 
-{{define "body"}}
+{{ define "body" }}
 <section id="page_1" class="section is-fullwidth is-medium has-background-info pt-6 pb-1 px-6">
   <div class="columns">
     <div class="column is-7-fullhd is-9-widescreen is-10-desktop has-text-light">
@@ -183,4 +183,4 @@
     <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
   </div>
 </section>
-{{end}}
+{{ end }}
