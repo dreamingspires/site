@@ -1,5 +1,4 @@
-title = "Example website"
-urls = ["gemini://example.com"]
+title = "Dreaming Spires"
 
 [params]
 fathom_id = "testvalue"
@@ -25,30 +24,28 @@ footer = [
     { url = "/privacy_policy", name = "Privacy Policy" },
 ]
 
-[feeds]
-"/" = "Example feed"
-
 [permalinks]
-"/" = "/{{ .Date.Format `2006/01/02` }}/{{ path.Base .Path }}/"
+"/portfolio/" = "/portfolio/{{ .Date.Format `2006/01/02` }}/{{ path.Base .Path }}/"
 
 [[tasks]]
-input = [".gmi"]
-output = ".gmi"
-template = ".gmi"
-static_dir = "static"
-output_dir = "public"
-
-[[tasks]]
-input = [".html"]
+input = [".md", ".html"]
 output = ".html"
 template = ".html"
-preprocess.md = "markdown"
+preprocess.md = "mdtohtml --unsafe"
 static_dir = "static"
 output_dir = "public"
+ugly_urls = true
 
 [[tasks]]
 input = [".scss"]
 output = ".css"
 preprocess.scss = "sassc"
+output_dir = "public/assets"
+ugly_urls = true
+
+[[tasks]]
+input = [".jpg", ".jpeg", ".png"]
+output = ".jpg"
+preprocess.jpg = "magick /dev/stdin -strip -interlace Plane -gaussian-blur 0.05 -quality 85% /dev/stdout"
 output_dir = "public"
 ugly_urls = true
