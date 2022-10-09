@@ -1,3 +1,5 @@
 [ ] Why main page isn't full height any more
 [ ] Add form submission element
-[ ] Gather testimonials (Karla, Katerina, etc.)
+[ ] Gather testimonials (Karla, Katerina, Kristine, etc.)
+[ ] Set up fathom analytics
+[ ] Fix auction scraper blog post image (currently it's of Cambridge!)
