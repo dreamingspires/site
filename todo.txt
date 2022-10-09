@@ -1,2 +1,3 @@
-Why main page isn't full height any more
-Add form submission element
+[ ] Why main page isn't full height any more
+[ ] Add form submission element
+[ ] Gather testimonials (Karla, Katerina, etc.)
