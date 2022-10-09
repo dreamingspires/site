@@ -5,6 +5,8 @@ params:
   author: "Edd Salkield"
 ---
 
+<img src="/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg">
+
 This project spotlight is dedicated to _[auction-scraper](https://dreamingspires.dev/github.com/dreamingspires/auction-scraper)_, an open source, extensible auction house scraper for ebay, liveauctioneers, and other platforms.
 Built for the [School of Anthropology at the University of Oxford](https://www.anthro.ox.ac.uk/), it serves as a fantastic example of how computational talent can bring tremendous value in unlikely places!
 
@@ -36,7 +38,8 @@ Alternatively, searches can be conducted given a query, with all resulting aucti
 
 The scraped data is placed into a sqlite database, making use of [SQLAlchemy](https://www.sqlalchemy.org/) to merge older scraped data with the most up-to-date results.
 Additional data, such as images and the downloaded pages themselves, can be placed within a data directory and are referenced from the database itself.
-Packaging and distribution
+
+### Packaging and distribution
 
 To make installation easy, we have packaged the project for distribution via [PyPI](https://pypi.org/), the Python Package Index, making installation as simple as:
 
@@ -49,7 +52,8 @@ The project is open source, so if you'd like to build the project yourself you c
 
 In all, this has been a really fascinating project to get involved with, and we can't wait to see the results of the research as the data set grows and the scraper sees wider adoption.
 Indeed, feel free to download auction-scraper yourself and give it a try.
-Need to develop CLI tools?
+
+### Need to develop CLI tools?
 
 Whether you require a quick script to clean your data set, or want to see your research tooling be as scriptable and useful as possible, we have you covered.
 Our developers have experience in packaging software for the command line, and building flexible interfaces for future reuse in new situations.
