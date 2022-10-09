@@ -1,0 +1,28 @@
+{{ define "body" }}
+<section class="hero">
+  <div class="hero-body" style="background-image: url('/assets/images/photos/oxford_arial.jpg'); background-position: center; height:400px; background-size: cover">
+        <div class="container has-text-centered mt-6">
+            <h1 class="title is-2 has-text-white" style="text-shadow: 1px 1px 2px black">{{ .Title }}</h1>
+        </div>
+    </div>
+</section>
+
+<section class="columns is-mobile is-centered my-2">
+  <div class="column background-primary-dark is-11-mobile is-8-tablet is-7-desktop is-7-widescreen is-7-fullhd">
+    {{ range .Pages }}
+    <div class="article">
+      <h2 class="is-size-3 is-underlined">
+        <a href="{{ .URL }}">{{ .Title }}</a>
+      </h2>
+
+      <div class="tags has-addons">
+        {{ if .Params.author }}
+        <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
+        {{ end }}
+        <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
