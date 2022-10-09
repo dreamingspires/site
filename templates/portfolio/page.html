@@ -1,0 +1,22 @@
+{{ define "head" }}
+{{ if .Params.author }}
+  <meta name="author" content="{{ .Params.author }}">
+{{ end }}
+{{ end }}
+
+{{ define "body" }}
+<section class="columns is-mobile is-centered mt-5">
+  <div class="column background-primary-dark is-12-mobile is-12-tablet is-9-desktop is-7-widescreen is-7-fullhd">
+    <article class="mx-3">
+      <h1>{{ .Title }}</h1>
+      <div class="tags has-addons">
+        {{ if .Params.author }}
+        <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
+        {{ end }}
+        <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+      </div>
+      {{ .Content | safeHTML }}
+    </article>
+  </div>
+</section>
+{{ end }}
