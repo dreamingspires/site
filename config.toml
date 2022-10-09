@@ -30,7 +30,7 @@ footer = [
 input = [".md", ".html"]
 output = ".html"
 template = ".html"
-preprocess.md = "mdtohtml --unsafe"
+preprocess.md = "./mdtohtml"
 static_dir = "static"
 output_dir = "public"
 

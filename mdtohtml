@@ -1,0 +1,4 @@
+#!/bin/sh
+# This exists solely because bulma auto-styles everything to have <p> margin 0
+# Therefore we need to add its class for margins back in
+mdtohtml --unsafe | sed 's/<p>/<p class=\"my-2\">/g' -
