@@ -1,3 +1,3 @@
 {{ define "body" }}
-{{ .Content }}
+{{ .Content | safeHTML }}
 {{ end }}
