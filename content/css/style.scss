@@ -156,8 +156,6 @@ body > footer {
     text-shadow: 1px 1px 10px black;
 }
 
-
-
 // Thicker navbar-burger
 .navbar-burger > span {
     height: 2px;
@@ -165,7 +163,6 @@ body > footer {
 
 .fa-rotate-335 {
     transform: rotate(335deg) translateY(-10%);
-
 }
 
 .modal a {
@@ -176,10 +173,29 @@ body > footer {
 	position: fixed;
 }
 .modal-content, .modal-card {
-
 	width: auto;
 }
 
 #mobileModal.modal-content {
     max-height: 500px;
+}
+
+// Make headers have their usual meaning
+h1, h2, h3, h4, h5, h6 {
+    @extend .title;
+}
+h1 {
+    @extend .is-1;
+}
+h2 {
+    @extend .is-2;
+}
+h3 {
+    @extend .is-3;
+}
+h4 {
+    @extend .is-4;
+}
+h5 {
+    @extend .is-5;
 }
