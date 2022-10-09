@@ -34,7 +34,6 @@ template = ".html"
 preprocess.md = "mdtohtml --unsafe"
 static_dir = "static"
 output_dir = "public"
-ugly_urls = true
 
 [[tasks]]
 input = [".scss"]

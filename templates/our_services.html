@@ -1,0 +1,422 @@
+{{ define "head" }}
+<script src="/assets/js/bulma-collapsible.min.js"></script>
+{{ end }}
+
+{{ define "fullheight" }}
+  {{ partial "landing.html" "#register_client" | safeHTML }}
+{{ end }}
+
+{{ define "body" }}
+<a id="register_client" style="font-size: 0"></a>
+
+<section class="is-hidden-touch">
+  <section id="client_desk_1" class="is-hero is-fullheight-with-navbar has-background-info has-text-light is-hidden-touch pt-6">
+    
+    <div class="tile is-ancestor mx-6">
+      <div class="tile is-parent is-12 is-horizontal mb-3">
+          <!-- <div class="tile is-child is-1"></div> -->
+        <div class="tile is-child is-8 content">
+          {{ .Params.welcome_page.text | safeHTML }}
+        </div>
+        <div class="tile is-parent is-vertical is-4 content has-text-centered pb-0">
+          <div class="tile is-child"></div>
+          <div class="tile is-child">
+            <p class="subtitle is-size-4 mb-3">
+              Know what you need?
+            </p>
+            <div class="has-text-centered">
+              <a class="button is-warning has-background-warning-dark is-rounded is-large" href="#signup">
+                <span class="is-size-4">
+                  Get in Touch
+                </span>
+              </a>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="columns mx-6">
+      <div class="column is-2">
+        <hr style="border: 1px solid;" class="new subtitle">
+      </div>
+      <div class="subtitle is-italic is-size-5 pt-5 mx-5">
+        Learn more about us...
+      </div>
+      <div class="column">
+        <hr style="border: 1px solid;" class="new subtitle">
+      </div>
+    </div>
+    
+    <div class="columns mx-6 my-0">
+      {{ range $i, $e := .Params.client_text }}
+      {{ if le $i 2 }}
+        <div class="column">
+          {{ $e.title | safeHTML }}
+        </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="columns mx-6 my-0">
+      {{ range $i, $e := .Params.client_text }}
+      {{ if le $i 2 }}
+        <div class="column">
+          <div class="level">
+            <div class="level-item">
+              <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+            </div>
+          </div>
+        </div> 
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="columns mx-6 my-0">
+      {{ range $i, $e := .Params.client_text }}
+      {{ if le $i 2 }}
+        <div class="column">
+          <b>{{ $e.blurb_title }}</b>
+        </div>
+      {{ end }}
+      {{ end }}
+    </div>
+    <div class="columns mx-6 my-0">
+      {{ range $i, $e := .Params.client_text }}
+      {{ if le $i 2 }}
+        <div class="column">
+          {{ $e.blurb }}
+        </div> 
+      {{ end }}
+      {{ end }}
+    </div>
+
+    <div class="has-text-centered pb-1">
+      <a href="#client_desk_2" class="title is-2 fas fa-chevron-down has-text-light"></a>
+    </div>
+
+  </section>
+
+  <section id="client_desk_2" class="is-hero has-background-light pt-6 pb-0">
+    <div class="tile is-ancestor mx-6">
+      
+      <div class="tile is-parent is-vertical">
+        <div class="tile is-parent is-horizontal">
+          {{ $e := index .Params.client_text 3 }}
+          <div class="tile is-child is-6">
+            {{ $e.title | safeHTML }}
+            <div class="has-text-info">
+              <div class="level">
+                <div class="level-item">
+                  <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                </div>
+              </div>
+            </div>
+            <b>{{ $e.blurb_title }}</b>
+            <br>
+            {{ $e.blurb }}
+          </div>
+          <div class="tile is-parent is-vertical is-6">
+            <div class="tile is-child is-12">
+              <div class="is-square-image-128x128"></div>
+            </div>    
+            {{ $e := index .Params.client_text 4 }}
+            <div class="tile is-child is-12">
+              {{ $e.title | safeHTML }}
+              <div class="has-text-info">
+                <div class="level">
+                  <div class="level-item">
+                    <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                  </div>
+                </div>
+              </div>
+              <b>{{ $e.blurb_title | safeHTML }}</b>
+              <br>
+              {{ $e.blurb | safeHTML }}
+            </div>
+          </div>
+        </div>
+        <div class="tile is-child is-12">
+          <h1 class="title mb-3 is-size-1 has-text-dark">Oxbridge-based Software
+  Solutions <br>for Researchers</h1>
+        </div>
+      </div>
+      <div class="tile is-parent is-vertical is-4">
+        <div class="tile is-parent is-12">
+          <div class="tile is-parent is-12 is-vertical">          
+            <div class="tile is-child is-12 mt-6">           
+              {{ $e := index .Params.client_text 5 }}
+              <div class="has-text-info">
+                <div class="level">
+                  <div class="level-item">
+                    <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                  </div>
+                </div>
+              </div>
+              {{ $e.title | safeHTML }}
+              <b>{{ $e.blurb_title | safeHTML }}</b>
+              <br>
+              {{ $e.blurb | safeHTML }}
+            </div>
+            <div class="tile is-child is-12 has-text-centered">
+              <p class="is-size-5 mb-3"><i>Oxbridge based, freelance powered.</i></p>
+                <a class="button is-warning is-rounded has-background-warning-dark" href="#signup">Enquire Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="has-text-centered pb-1">
+      <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
+    </div>
+  </section>
+</section>
+
+<!-- Mobile section -->
+
+<section id="client_desk_1" class="is-hidden-desktop ">
+  <section class="is-hero has-background-info has-text-light pb-0">
+    <div class="is-8 content px-6 pt-3" >
+      {{ .Params.welcome_page.text | safeHTML }}
+    </div>
+    <div class="mt-6 px-6">
+      <p class="subtitle subtitle-on-dark is-size-3 mb-0 has-text-centered mb-3">
+        Know what you need?
+      </p>
+      <div class="level">
+        <div class="buttons level-item">
+          <a class="button is-warning is-rounded is-size-4" href="#signup">
+            <p class="is-size-3">
+              Get in Touch
+            </p>
+          </a>
+        </div> 
+      </div>
+    </div>
+    <div class="has-text-centered pb-1">
+      <a href="#regMob2" class="title is-2 fas fa-chevron-down has-text-light"></a>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 2 }}
+  <section id="regMob2" class="is-hero has-background-light has-text-info pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light has-text-info fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile ml-0 mr-4">
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 1 }}
+  <section id="regMob2" class="is-hero has-background-light has-text-info pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light has-text-info fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile mr-0 ml-4">
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="has-text-centered pb-1">
+      <a href="#regMob3" class="title is-2 fas fa-chevron-down has-text-info"></a>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 5 }}
+  <section id="regMob3" class="is-hero has-background-info has-text-light pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-info has-text-light fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile ml-0 mr-4">
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 0 }}
+  <section id="regMob3" class="is-hero has-background-info has-text-light pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-info has-text-light fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile mr-0 ml-4">
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="has-text-centered pb-1">
+      <a href="#regMob4" class="title is-2 fas fa-chevron-down has-text-light"></a>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 3 }}
+  <section id="regMob4" class="is-hero has-background-light has-text-info pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light has-text-info fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile ml-0 mr-4">
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ $e := index .Params.client_text 4 }}
+  <section id="regMob4" class="is-hero has-background-light has-text-info pt-5 pb-0">
+    <div class="collapsible-wrapper mx-5 is-vcentered is-mobile">
+      <div class="mx-3">
+        {{ $e.title | safeHTML }}
+      </div>
+      <div class="columns is-mobile is-vcentered is-gapless mx-3">
+        <div class = "column is-four-fifths has-text-weight-bold">
+          <br>
+          {{ $e.blurb_title | safeHTML }}
+        </div>
+        <div class = "column is-one-fifth">
+          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light has-text-info fas fa-chevron-down" aria-label="chevron" onclick="ToggleExpand(this)">
+          </button>
+        </div>
+      </div>
+      <div id="blurb0" class="is-collapsible">
+        <div class="columns is-vcentered is-mobile mr-0 ml-4">
+          <div class="column is-3">
+            <div class="level">
+              <div class="level-item">
+                <i class="fas {{ $e.icon | safeHTML }} fa-4x fa-centered mb-3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="column is-three-quarters">
+            {{ $e.blurb | safeHTML }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="level mt-6">
+      <div class="level-item">
+        <div class="buttons level-right">
+            <a class="button is-warning is-rounded" href="../../contact">Sign Up Below</a>
+          </div> 
+      </div>
+    </div>
+    
+    <div class="has-text-centered pb-1">
+      <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
+    </div>
+  </section>
+</section>
+
+<script src="/assets/js/register_collapsible.js"></script>
+
+<!-- { render_get_in_touch('Whether you’re beginning to wonder how computation would aid your research, or already have a fully-planned specification, we’d love to hear from you. Our consultants will be happy to discuss the ways in which your research could be accelerated by introducing programming talent.', form, url_for('our_services', _anchor="signup")) }} -->
+
+{{ end }}

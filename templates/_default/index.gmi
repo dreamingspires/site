@@ -1,8 +1,0 @@
-{{ define "body" }}
-# {{ .Title }}
-{{ if .Content }}
-{{ .Content }}{{ end }}
-{{ range .Pages }}=> {{ .Path }} {{ if not .Date.IsZero -}}
-{{.Date.Format "2006-01-02"}} {{end}}{{.Title}}
-{{ end -}}
-{{ end }}
