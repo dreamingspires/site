@@ -34,6 +34,12 @@ preprocess.md = "./mdtohtml"
 static_dir = "static"
 output_dir = "public"
 
+[[tasks.feeds]]
+input_dir = "portfolio"
+title = "Dreaming Spires blog"
+template = "atom.xml"
+output = "portfolio/atom.xml"
+
 [[tasks]]
 input = [".scss"]
 output = ".css"
