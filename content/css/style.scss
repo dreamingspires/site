@@ -199,3 +199,8 @@ h4 {
 h5 {
     @extend .is-5;
 }
+
+ul {
+    list-style-type: disc;
+    list-style-position: inside;
+}
