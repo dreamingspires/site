@@ -24,6 +24,7 @@ footer = [
 ]
 
 [permalinks]
+# TODO: fix the portfolio links not working
 "/portfolio/" = "/portfolio/{{ .Date.Format `2006/01/02` }}/{{ path.Base .Path }}/"
 
 [[tasks]]

@@ -3,3 +3,15 @@
 [ ] Gather testimonials (Karla, Katerina, Kristine, etc.)
 [ ] Set up fathom analytics
 [ ] Fix auction scraper blog post image (currently it's of Cambridge!)
+[ ] Fix clickable arrows on homepage and other pages
+[ ] Spacing on "Develop with Us" is different
+
+Write about MAT-dp
+I thought you'd like to hear that the software paper<https://eur03.safelinks.protection.outlook.com/?url
+=https%3A%2F%2Fjoss.theoj.org%2Fpapers%2F10.21105%2Fjoss.04460&data=05%7C01%7Ckc512%40universityofcambri
+dgecloud.onmicrosoft.com%7C9865efb5984d4d9c0ee608da85b6dfd2%7C49a50445bdfa4b79ade3547b4f3986e9%7C0%7C0%7
+C637969319274180843%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6
+Mn0%3D%7C2000%7C%7C%7C&sdata=z2exHeySYtWDAbaJWbmjJ%2BBuBXzfIvXjUFDiUdpGOTE%3D&reserved=0> is out! There'
+
+If Dreaming Spires has a twitter handle that you'd like me to use (or you and Edd), please let me k
+now. I'd be happy to give you guys a shoutout
