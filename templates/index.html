@@ -134,16 +134,18 @@
 	<!-- Mobile timeline -->
 	<div class="columns is-centered is-hidden-tablet mt-2">
 		<div class="column is-11">
-      {% for i in range(7) %}
+  		{{ range $entry := .Params.timeline }}
         <div class="columns is-mobile is-vcentered">
           <div class="column is-3 has-text-centered">
-            { timeline_logo(i) }
+            <span class="icon is-large" style="color: {{ index $entry "colour" }}">
+              <i class="fas fa-3x {{ index $entry "logo" }}"></i>
+            </span>
           </div>
           <div class="column is-9">
-            { timeline_text(i) }
+            {{ index $entry "text" | safeHTML }}
           </div>
         </div>
-      {% endfor %}
+  		{{ end }}
 		</div>
 	</div>
 
