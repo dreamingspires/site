@@ -44,7 +44,7 @@ output = "portfolio/atom.xml"
 [[tasks]]
 input = [".scss"]
 output = ".css"
-preprocess.scss = "sassc"
+preprocess.scss = "npx sass --stdin"
 output_dir = "public/assets"
 ugly_urls = true
 

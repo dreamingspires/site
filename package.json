@@ -2,6 +2,7 @@
     "name": "dreamingspires-site",
     "devDependencies": {
         "@creativebulma/bulma-collapsible": "^1.0.4",
-        "bulma": "^0.9.3"
+        "bulma": "^0.9.3",
+        "sass": "^1.5.3"
     }
 }
