@@ -17,8 +17,9 @@ Form submission handled via CORS request to [staticforms](https://github.com/dre
 ## Requirements
 
 * [kiln](https://sr.ht/~adnano/kiln/) - the static site generator
-* [npm](https://www.npmjs.com/) - used to pull in stylesheet dependencies
-* [sassc](https://github.com/sass/sassc) - used to compile the stylesheets
+* [mdtohtml](https://git.sr.ht/~adnano/mdtohtml) - Convert Markdown to HTML
+* [npm](https://www.npmjs.com/) - used to pull in dependencies
+* [sass](https://sass-lang.com/) - compile the scss stylesheets to css
 * [entr](https://eradman.com/entrproject/) - used for watch.sh to rebuild files as they change
 * [imagemagick](https://imagemagick.org/) - used to compress images
 
