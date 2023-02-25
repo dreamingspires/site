@@ -91,6 +91,12 @@ section.has-background-light .subtitle.has-text-brown,  section.has-background-l
     color: $light;
 }
 // Custom styles
+* {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
 body {
 	overflow-x: hidden;
 }
