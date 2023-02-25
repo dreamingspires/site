@@ -114,9 +114,8 @@ body {
     flex-direction: column;
 }
 body > footer {
-    margin-top: auto; 
-    height: calc(100px + 1rem);
-    box-sizing: border-box;   
+    margin-top: auto;
+    min-height: calc(100px + 1rem);
 }
 //
 
