@@ -19,7 +19,7 @@
         <div class="column is-5 is-10-mobile">
           <div class="columns is-centered">
             <div class="column is-narrow has-equal-height">
-              <a href="/our_services#register_client">
+              <a href="our_services#register_client">
                 <button class="button is-medium is-warning is-box-button has-text-shadowed is-rounded">
                   <p>A Researcher</p>
                 </button>
@@ -186,34 +186,5 @@
   </div>
 </section>
 
-<section id="signup" class="section is-fullwidth is-medium has-background-info has-text-light py-6">
-	<div class="columns">
-		<div class="column is-half">
-      <div class="columns is-centered">
-        <div class="column is-11-tablet is-10-desktop is-7-widescreen is-7-fullhd">
-          <h1 class="title is-size-1 has-text-light">GET IN TOUCH!</h1>
-          <p>
-             Whether you’re beginning to wonder how computation would aid your research, or already have a fully-planned specification, we’d love to hear from you. Our consultants will be happy to discuss the ways in which your research could be accelerated by introducing programming talent.
-          </p>
-          <div class="has-text-centered is-hidden-mobile mt-6">
-            <img src="/assets/images/icons/megaphone_light.svg" style="width:90%;">
-          </div>
-        </div>
-      </div>
-    </div>
-		<div class="column is-half">
-      <div class="columns is-centered">
-        <div class="column is-11-tablet is-10-desktop is-10-widescreen is-10-fullhd pt-6">
-          <h3>Contact us at:</h3>
-          <h4><a href="mailto:contact@dreamingspires.dev">contact@dreamingspires.dev</a></h4>
-          <p class="is-size-7 is-italic">
-          At Dreaming Spires, we take your data seriously.  Any data you give us will be handled according to our <a href="/privacy_policy">privacy policy</a>.
-          </p>
-        </div>
-      </div>
-		</div>
-	</div>
-</section>
-
-
+{{ partial "signup.html" . | safeHTML }}
 {{ end }}

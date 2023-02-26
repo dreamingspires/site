@@ -11,7 +11,7 @@
 
 <section class="is-hidden-touch">
   <section id="client_desk_1" class="is-hero is-fullheight-with-navbar has-background-info has-text-light is-hidden-touch pt-6">
-    
+
     <div class="tile is-ancestor mx-6">
       <div class="tile is-parent is-12 is-horizontal mb-3">
           <!-- <div class="tile is-child is-1"></div> -->
@@ -30,12 +30,12 @@
                   Get in Touch
                 </span>
               </a>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
     </div>
- 
+
     <div class="columns mx-6">
       <div class="column is-2">
         <hr style="border: 1px solid;" class="new subtitle">
@@ -47,7 +47,7 @@
         <hr style="border: 1px solid;" class="new subtitle">
       </div>
     </div>
-    
+
     <div class="columns mx-6 my-0">
       {{ range $i, $e := .Params.client_text }}
       {{ if le $i 2 }}
@@ -66,7 +66,7 @@
               <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
             </div>
           </div>
-        </div> 
+        </div>
       {{ end }}
       {{ end }}
     </div>
@@ -84,7 +84,7 @@
       {{ if le $i 2 }}
         <div class="column">
           {{ $e.blurb }}
-        </div> 
+        </div>
       {{ end }}
       {{ end }}
     </div>
@@ -97,7 +97,7 @@
 
   <section id="client_desk_2" class="is-hero has-background-light pt-6 pb-0">
     <div class="tile is-ancestor mx-6">
-      
+
       <div class="tile is-parent is-vertical">
         <div class="tile is-parent is-horizontal">
           {{ $e := index .Params.client_text 3 }}
@@ -117,7 +117,7 @@
           <div class="tile is-parent is-vertical is-6">
             <div class="tile is-child is-12">
               <div class="is-square-image-128x128"></div>
-            </div>    
+            </div>
             {{ $e := index .Params.client_text 4 }}
             <div class="tile is-child is-12">
               {{ $e.title | safeHTML }}
@@ -141,8 +141,8 @@
       </div>
       <div class="tile is-parent is-vertical is-4">
         <div class="tile is-parent is-12">
-          <div class="tile is-parent is-12 is-vertical">          
-            <div class="tile is-child is-12 mt-6">           
+          <div class="tile is-parent is-12 is-vertical">
+            <div class="tile is-child is-12 mt-6">
               {{ $e := index .Params.client_text 5 }}
               <div class="has-text-info">
                 <div class="level">
@@ -188,7 +188,7 @@
               Get in Touch
             </p>
           </a>
-        </div> 
+        </div>
       </div>
     </div>
     <div class="has-text-centered pb-1">
@@ -405,15 +405,17 @@
       <div class="level-item">
         <div class="buttons level-right">
             <a class="button is-warning is-rounded" href="../../contact">Sign Up Below</a>
-          </div> 
+          </div>
       </div>
     </div>
-    
+
     <div class="has-text-centered pb-1">
       <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
     </div>
   </section>
 </section>
+
+{{ partial "signup.html" . | safeHTML }}
 
 <script src="/assets/js/register_collapsible.js"></script>
 
