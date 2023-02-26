@@ -36,9 +36,10 @@
 
   <section class="columns is-mobile is-centered my-0 has-background-backdrop is-fullheight-with-footer-and-navbar">
     <div class="column is-12-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd has-box-shadow-x px-0 py-0 has-background-light">
-      <section class="hero{% if is_fullpage %} is-fullheight-with-navbar {% endif %}">
+      <!-- TODO is_fullpage is not found anywhere else. Add parameter if this section needs to be fullpage-->
+      <!--section class="hero{% if is_fullpage %} is-fullheight-with-navbar {% endif %}"-->
         {{ block "fullheight" $ }}{{ end }}
-      </section>
+      <!--/section-->
         {{ block "body" $ }}{{ end }}
     </div>
   </section>
