@@ -67,7 +67,7 @@
     </div>
 
     <div class="has-text-centered pt-5 pb-1">
-      <a href="#register_form" class="title is-2 fas fa-chevron-down has-text-info"></a>
+      <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
     </div>
   </section>
 </section>
@@ -144,12 +144,15 @@
     </div>
     {{ end }}
     <div class="has-text-centered pt-5 pb-1">
-      <a href="#register_form" class="title is-2 fas fa-chevron-down has-text-info"></a>
+      <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
     </div>
   </section>
 </section>
-<a id="register_form"></a>
+
+{{ partial "signup.html" . | safeHTML }}
 
 <!-- TODO: sign up form -->
+<!-- <a id="register_form"></a> -->
+
 <script src="/assets/js/register_collapsible.js"></script>
 {{ end }}
