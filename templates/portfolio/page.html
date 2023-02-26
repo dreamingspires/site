@@ -5,18 +5,25 @@
 {{ end }}
 
 {{ define "body" }}
-<section class="columns is-mobile is-centered mt-5">
-  <div class="column background-primary-dark is-12-mobile is-12-tablet is-9-desktop is-7-widescreen is-7-fullhd">
-    <article class="mx-3">
-      <h1>{{ .Title }}</h1>
-      <div class="tags has-addons">
-        {{ if .Params.author }}
-        <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
-        {{ end }}
-        <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+<section class="container is-widescreen">
+  <div class="section mt-4">
+    <section class="columns is-mobile">
+      <div class="column background-primary-dark is-12 is-9-desktop">
+        <article class="mx-3">
+          <div class="content">
+            <h1>{{ .Title }}</h1>
+            <div class="tags has-addons">
+              {{ if .Params.author }}
+              <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
+              {{ end }}
+              <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+            </div>
+            {{ .Content | safeHTML }}
+          </div>
+        </article>
       </div>
-      {{ .Content | safeHTML }}
-    </article>
+    </section>
   </div>
 </section>
+
 {{ end }}
