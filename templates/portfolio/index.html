@@ -13,22 +13,27 @@
   </p>
 </div>
 
-<section class="columns is-mobile is-centered my-2">
-  <div class="column background-primary-dark is-11-mobile is-8-tablet is-7-desktop is-7-widescreen is-7-fullhd">
-    {{ range .Pages }}
-    <div class="article mb-4">
-      <h2 class="is-size-3 is-underlined mb-2">
-        <a href="{{ .URL }}">{{ .Title }}</a>
-      </h2>
+<section class="container is-widescreen">
+  <div class="section mt-4">
+    <div class="columns is-mobile">
+      <div class="column background-primary-dark is-11 is-10-desktop">
+        {{ range .Pages }}
+        <div class="article pt-4 pb-5">
+          <h2 class="is-size-3 is-underlined mb-2">
+            <a href="{{ .URL }}">{{ .Title }}</a>
+          </h2>
 
-      <div class="tags has-addons">
-        {{ if .Params.author }}
-        <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
+          <div class="tags has-addons">
+            {{ if .Params.author }}
+            <span class="tag is-rounded is-warning">{{ .Params.author }}</span>
+            {{ end }}
+            <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
+          </div>
+        </div>
         {{ end }}
-        <span class="tag is-rounded">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</span>
       </div>
     </div>
-    {{ end }}
   </div>
-</section>
+</div>
+
 {{ end }}
