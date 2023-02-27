@@ -97,72 +97,109 @@
 
   <section id="client_desk_2" class="is-hero has-background-light pt-6 pb-0">
     <div class="tile is-ancestor mx-6">
-
-      <div class="tile is-parent is-vertical">
-        <div class="tile is-parent is-horizontal">
-          {{ $e := index .Params.client_text 3 }}
-          <div class="tile is-child is-6">
-            {{ $e.title | safeHTML }}
-            <div class="has-text-info">
-              <div class="level">
-                <div class="level-item">
-                  <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
-                </div>
-              </div>
-            </div>
-            <b>{{ $e.blurb_title }}</b>
-            <br>
-            {{ $e.blurb }}
-          </div>
-          <div class="tile is-parent is-vertical is-6">
-            <div class="tile is-child is-12">
-              <div class="is-square-image-128x128"></div>
-            </div>
-            {{ $e := index .Params.client_text 4 }}
-            <div class="tile is-child is-12">
-              {{ $e.title | safeHTML }}
-              <div class="has-text-info">
-                <div class="level">
-                  <div class="level-item">
-                    <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
-                  </div>
-                </div>
-              </div>
-              <b>{{ $e.blurb_title | safeHTML }}</b>
-              <br>
-              {{ $e.blurb | safeHTML }}
-            </div>
+      <div class="tile is-vertical">
+        <div class="tile is-horizontal is-parent">
+          <div class="tile is-child is-12">
+            <h1 class="title mb-3 is-2 has-text-dark">Oxbridge-based Software
+    Solutions <br>for Researchers</h1>
           </div>
         </div>
-        <div class="tile is-child is-12">
-          <h1 class="title mb-3 is-size-1 has-text-dark">Oxbridge-based Software
-  Solutions <br>for Researchers</h1>
-        </div>
-      </div>
-      <div class="tile is-parent is-vertical is-4">
-        <div class="tile is-parent is-12">
-          <div class="tile is-parent is-12 is-vertical">
-            <div class="tile is-child is-12 mt-6">
+        <div class="tile is-vertical">
+          <div class="tile is-horizontal">
+            <div class="tile is-parent">
+              {{ $e := index .Params.client_text 3 }}
+              <div class="tile is-child">
+                {{ $e.title | safeHTML }}
+              </div>
+            </div>
+            <div class="tile is-parent">
+              {{ $e := index .Params.client_text 4 }}
+              <div class="tile is-child">
+                {{ $e.title | safeHTML }}
+              </div>
+            </div>
+            <div class="tile is-parent">
               {{ $e := index .Params.client_text 5 }}
-              <div class="has-text-info">
-                <div class="level">
-                  <div class="level-item">
-                    <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+              <div class="tile is-child">
+                {{ $e.title | safeHTML }}
+              </div>
+            </div>
+          </div>
+          <div class="tile is-horizontal">
+            <div class="tile is-parent">
+              <div class="tile is-child">
+                {{ $e := index .Params.client_text 3 }}
+                <div class="has-text-info">
+                  <div class="level">
+                    <div class="level-item">
+                      <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                    </div>
                   </div>
                 </div>
               </div>
-              {{ $e.title | safeHTML }}
-              <b>{{ $e.blurb_title | safeHTML }}</b>
-              <br>
-              {{ $e.blurb | safeHTML }}
             </div>
-            <div class="tile is-child is-12 has-text-centered">
-              <p class="is-size-5 mb-3"><i>Oxbridge based, freelance powered.</i></p>
-                <a class="button is-warning is-rounded has-background-warning-dark" href="#signup">Enquire Now</a>
+            <div class="tile is-parent">
+              <div class="tile is-child">
+                {{ $e := index .Params.client_text 4 }}
+                <div class="has-text-info">
+                  <div class="level">
+                    <div class="level-item">
+                      <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class="tile is-parent">
+              <div class="tile is-child">
+                {{ $e := index .Params.client_text 5 }}
+                <div class="has-text-info">
+                  <div class="level">
+                    <div class="level-item">
+                      <i class="fas {{ $e.icon | safeHTML }} fa-10x fa-centered mb-3"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tile is-horizontal">
+            <div class="tile is-parent">
+              {{ $e := index .Params.client_text 3 }}
+              <div class="tile is-child">
+                <b>{{ $e.blurb_title | safeHTML }}</b>
+                <br>
+                {{ $e.blurb | safeHTML }}
+              </div>
+            </div>
+            <div class="tile is-parent">
+              {{ $e := index .Params.client_text 4 }}
+              <div class="tile is-child">
+                <b>{{ $e.blurb_title | safeHTML }}</b>
+                <br>
+                {{ $e.blurb | safeHTML }}
+              </div>
+            </div>
+            <div class="tile is-parent">
+              {{ $e := index .Params.client_text 5 }}
+              <div class="tile is-child">
+                <b>{{ $e.blurb_title | safeHTML}}</b>
+                <br>
+                {{ $e.blurb | safeHTML }}
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="tile is-horizontal is-parent">
+          <div class="tile is-child is-12 has-text-centered">
+            <p class="is-size-5 mb-3"><i>Oxbridge based, freelance powered.</i></p>
+              <a class="button is-warning is-rounded has-background-warning-dark" href="#signup">Enquire Now</a>
           </div>
         </div>
       </div>
+
     </div>
     <div class="has-text-centered py-4">
       <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
