@@ -55,75 +55,80 @@
 
 {{ define "body" }}
 <section id="page_1" class="section is-fullwidth is-medium has-background-info pt-6 pb-1 px-6">
-  <div class="columns">
-    <div class="column is-7-fullhd is-9-widescreen is-10-desktop has-text-light">
-      <h1 class="title has-text-light">Welcome to Dreaming Spires</h1>
-      <p class="subtitle has-text-primary is-italic">Bringing Programming Talent to Your Research</p>
-      <div class="columns">
-        <div class="column is-1 is-hidden-mobile"></div>
-        <div class="column">
+  <div class="block has-text-light">
+    <h1 class="title is-1 has-text-light">Welcome to Dreaming Spires</h1>
+    <p class="subtitle is-3 has-text-primary is-italic">Bringing Programming Talent to Your Research</p>
+    <div class="content is-size-5">
           {{ range .Params.welcome_page.text }}
             <p>{{ . }}</p><br>
           {{ end }}
         </div>
       </div>
-    </div>
-  </div>
-  <div class="is-hidden-mobile mt-6"></div>
-  <div class="columns is-centered">
-    <div class="column is-9 is-11-tablet">
-      <div class="columns">
-        <div class="column is-half has-equal-height has-text-light">
-          <p class="is-size-5 has-text-weight-semibold">Perfect for Researchers...</p>
 
+  <div class="content is-size-5">
+    <div class="container is-max-widescreen">
+      <div class="columns is-desktop">
+        <div class="column has-text-light">
+  <div class="columns is-centered">
+            <div class="column is-10-widescreen">
+              <div class="is-flex is-flex-direction-column is-flex-wrap-nowrap">
+          <p class="is-size-5 has-text-weight-semibold">Perfect for Researchers...</p>
           {{ range .Params.welcome_page.researcher_reasons }}
-          <p class="has-text-left py-3">
+                <div class="columns is-mobile">
+                  <div class="column is-narrow">
             <span class="icon has-text-warning">
               <i class="fas fa-check"></i>
             </span>
+                  </div>
+                  <div class="column">
+                    <p class="has-text-left">
             {{ . }}
           </p>
+                  </div>
+                </div>
           {{ end }}
-
-          <div class="is-hidden-mobile mt-6"></div>
-          <div class="columns is-mobile is-centered">
-            <div class="column is-narrow has-text-centered">
               <p class="has-text-centered pt-4">Find out more as...</p>
-              <a class="pt-2" href="./our_services#register_client">
-                <button class="button is-normal is-warning has-background-warning-dark is-rounded is-fullwidth">
-                  <p>A Researcher</p>
-                </button>
+                <a  href="./our_services#register_client" class="is-align-self-center button is-medium is-warning has-background-warning-dark is-rounded">
+                  A Researcher
               </a>
             </div>
           </div>
         </div>
-        <div class="column is-half has-equal-height has-text-light">
+        </div>
+        <div class="column is-1 is-2-fullhd"></div>
+        <div class="column has-text-light">
+          <div class="columns is-centered">
+            <div class="column is-10-widescreen">
+              <div class="is-flex is-flex-direction-column is-flex-wrap-nowrap">
           <p class="is-size-5 has-text-weight-semibold">Ideal for Developers...</p>
-
           {{ range .Params.welcome_page.developer_reasons }}
-          <p class="has-text-left py-3">
+                <div class="columns is-mobile">
+                  <div class="column is-narrow">
             <span class="icon has-text-primary">
               <i class="fas fa-check"></i>
             </span>
+                  </div>
+                  <div class="column">
+                    <p class="has-text-left">
             {{ . }}
           </p>
+                  </div>
+                </div>
           {{ end }}
 
-          <div class="is-hidden-mobile mt-6"></div>
-          <div class="columns is-mobile is-centered">
-            <div class="column is-narrow has-text-centered">
               <p class="has-text-centered pt-4">Find out more as...</p>
-              <a class="pt-2" href="./develop_with_us#register_developer">
-                <button class="button is-normal is-primary has-background-primary-dark is-rounded is-fullwidth">
-                  <p>A Developer</p>
-                </button>
+                <a href="./develop_with_us#register_developer" class="is-align-self-center button is-medium is-primary has-text-black has-background-primary-dark is-rounded">
+                  A Developer
               </a>
             </div>
+            </div>
+
           </div>
         </div>
       </div>
     </div>
   </div>
+
   <div class="is-hidden-mobile mt-5"></div>
   <div class="has-text-centered py-4">
     <a href="#page_2" class="title is-2 fas fa-chevron-down has-text-white"></a>
@@ -131,13 +136,14 @@
 </section>
 
 <section id="page_2" class="section is-fullwidth is-medium has-background-light pt-6 pb-0 px-6">
-  <div class="column">
-    <h1 class="title has-text-dark">Our Development Process</h1>
-    <p class="subtitle has-text-primary is-italic">The Unique Dreaming Spires Model</p>
+  <div class="block">
+    <h1 class="title is-2 has-text-dark">Our Development Process</h1>
+    <p class="subtitle is-4 has-text-primary is-italic">The Unique Dreaming Spires Model</p>
   </div>
 
 	<!-- Mobile timeline -->
-	<div class="columns is-centered is-hidden-tablet mt-2">
+  <div class="content">
+    <div class="columns is-centered is-hidden-desktop mt-2">
 		<div class="column is-11">
   		{{ range $entry := .Params.timeline }}
         <div class="columns is-mobile is-vcentered">
@@ -153,10 +159,12 @@
   		{{ end }}
 		</div>
 	</div>
+  </div>
+
 
 	<!-- Desktop timeline -->
-	<div class="columns is-centered is-hidden-mobile">
-		<div class="column is-11-tablet is-10-desktop is-9-widescreen is-9-fullhd">
+  <div class="content is-size-5">
+    <div class="container is-hidden-touch">
       <div style="display: grid; align-items: center; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 1fr;">
         {{ range $index, $entry := .Params.timeline }}
           {{ if (eq (math.Mod $index 2) 1) }}
@@ -186,6 +194,7 @@
       </div>
     </div>
   </div>
+
   <div class="has-text-centered py-4">
     <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
   </div>
