@@ -1,42 +1,48 @@
 {{ define "fullheight" }}
-<div class="hero-body px-0 py-0" style="background-image: linear-gradient(white 15%, #c9ffff 80%); background-size:cover; background-position:top; display:flex; flex-direction:column">
-  <div style="flex:1; display:flex; flex-direction:column; width:100%">
-
-    <div style="flex:3; display:flex; flex-direction:column;">
-      <div class="columns is-mobile is-centered is-vcentered" style="flex:1">
-        <div class="column is-three-quarters-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd has-text-centered mt-6">
-          <figure class="image has-text-centered">
-            <img src="/assets/images/logos/extended_logo.svg" alt="Bringing programming talent to your research" style="width:100%;">
+<div class="hero-body px-0 py-0 is-flex is-flex-direction-column" style="background-image: linear-gradient(white 15%, #c9ffff 80%); background-size:cover; background-position:top;">
+  <div class="section">
+    <div class="columns is-mobile is-centered">
+      <div class="column is-three-quarters-mobile is-half-tablet is-half-desktop is-half-widescreen is-one-third-fullhd has-text-centered">
+        <figure class="image has-text-centered is-fullwidth">
+          <img src="/assets/images/logos/extended_logo.svg" alt="Bringing programming talent to your research">
           </figure>
         </div>
       </div>
     </div>
     <div class="is-hidden-desktop mt-4"></div>
-    <div class="is-hidden-mobile mt-6 pt-5"></div>
-    <div style="flex:1; display:flex; flex-direction:column;" class="has-text-centered">
-      <p class="is-size-5 mb-4 has-text-black">Are You...</p>
-      <div class="columns is-mobile is-centered">
-        <div class="column is-5 is-10-mobile">
-          <div class="columns is-centered">
-            <div class="column is-narrow has-equal-height">
-              <a href="our_services#register_client">
-                <button class="button is-medium is-warning is-box-button has-text-white is-rounded">
-                  <p>A Researcher</p>
-                </button>
+  <div class="is-hidden-touch mt-6 pt-5"></div>
+  <div class="container is-size-4 is-size-3-widescreen">
+    <p class="mb-4 has-text-black has-text-centered">Are You...</p>
+
+    <!-- Buttons on touch devices - medium sizes -->
+    <div class="columns is-hidden-desktop">
+      <div class="column is-full-mobile is-half-tablet">
+        <a href="our_services#register_client" class="button is-medium is-warning has-text-white is-rounded is-fullwidth">
+          A Researcher
               </a>
             </div>
-            <div class="column is-narrow has-equal-height">
-              <a href="develop_with_us#register_developer">
-                <button class="button is-medium is-primary is-box-button has-text-black	is-rounded">
-                  <p>A Developer</p>
-                </button>
+      <div class="column is-full-mobile is-half-tablet">
+        <a href="develop_with_us#register_developer" class="button is-medium is-primary has-text-black is-rounded is-fullwidth">
+          A Developer
               </a>
             </div>
           </div>
+
+    <!-- Buttons on desktop devices - medium sizes -->
+    <div class="columns is-hidden-touch">
+      <div class="column is-full-mobile is-half-tablet">
+        <a href="our_services#register_client" class="button is-large is-warning has-text-white is-rounded is-fullwidth">
+          A Researcher
+        </a>
         </div>
+      <div class="column is-full-mobile is-half-tablet">
+        <a href="develop_with_us#register_developer" class="button is-large is-primary has-text-black is-rounded is-fullwidth">
+          A Developer
+        </a>
       </div>
     </div>
 
+  </div>
 		<div class="is-hidden-touch" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
 		</div>
 		<div class="is-hidden-desktop" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
@@ -45,7 +51,6 @@
       <a href="#page_1" class="title is-2 fas fa-chevron-down has-text-white"></a>
     </div>
 	</div>
-</div>
 {{ end }}
 
 {{ define "body" }}
