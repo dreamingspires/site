@@ -3,7 +3,9 @@
   <div class="section mt-5">
     <div class="columns is-mobile is-centered">
       <div class="column background-primary-dark is-12-mobile is-12-tablet is-9-desktop is-7-widescreen is-7-fullhd">
-        {{ .Content | safeHTML }}
+        <div class="content">
+          {{ .Content | safeHTML }}
+        </div>
       </div>
     </div>
   </div>
