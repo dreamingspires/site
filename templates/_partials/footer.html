@@ -2,7 +2,7 @@
   <div class="content has-text-centered">
     <div class="pb-2">
     {{ range $value := site.Params.nav.footer}}
-      <a href="{{ index $value "url" }}">{{ index $value "name" }}</a>
+      <a class="is-underlined" href="{{ index $value "url" }}">{{ index $value "name" }}</a>
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     {{ end }}
     </div>
@@ -17,11 +17,11 @@
         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png">
       </a>
       <span class="ml-2">
-        Content licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
+        Content licensed under <a class="is-underlined" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>
       </span>
 
       <span style="flex-basis: 100%">
-        <a href="https://github.com/dreamingspires/site">source</a> under <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>
+        <a class="is-underlined" href="https://github.com/dreamingspires/site">source</a> under <a class="is-underlined" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3</a>
       </span>
     </div>
   </div>
