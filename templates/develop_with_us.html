@@ -19,22 +19,33 @@
     </div>
   </section>
 
-  <section id="dev_desk_2" class=" is-hero has-background-light pt-6 pb-0 ">
-    <div class="mx-6 px-6">
+  <section id="dev_desk_2" class="section has-background-light pb-0">
+    <div class="px-3 content">
       <h2 class="is-size-1 mb-0 pt-3 has-text-weight-light">How to Join</h2>
       <hr style="border: 0.2px solid black" class="mt-0 pt-0">
-      <div class="columns">
+      <div class="columns is-multiline">
         {{ range $e := .Params.how_to_join }}
-        <div class="column is-4 px-5 content">
+        <div class="column is-4 py-0 px-4">
           <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
+        </div>
+        {{ end }}
+
+        {{ range $e := .Params.how_to_join }}
+        <div class="column is-4 py-0 px-4">
           {{ $e.subtitle | safeHTML }}
+        </div>
+        {{ end }}
+
+        {{ range $e := .Params.how_to_join }}
+        <div class="column is-4 py-0 px-4">
           {{ $e.bullets | safeHTML }}
         </div>
         {{ end }}
       </div>
-      <div class="columns">
+
+      <div class="columns mt-4">
         {{ range $e := .Params.how_to_join }}
-        <div class="column is-4 px-5 content">
+        <div class="column is-4 px-5">
           <div class="level">
             <div class="level-item has-text-info">
               <i class="fas {{ $e.icon }} fa-8x fa-centered mb-3"></i>
@@ -45,18 +56,26 @@
       </div>
       <h2 class="is-size-1 mb-0 pt-3 has-text-weight-light">How The Talent Pool Works</h2>
       <hr style="border: 0.2px solid black" class="mt-0 pt-0">
-      <div class="columns">
+      <div class="columns is-multiline">
         {{ range $e := .Params.how_it_works }}
-        <div class="column is-4 px-5 content">
+        <div class="column is-4 py-0 px-4">
           <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
+        </div>
+        {{ end }}
+        {{ range $e := .Params.how_it_works }}
+        <div class="column is-4 py-0 px-4">
           {{ $e.subtitle | safeHTML }}
+        </div>
+        {{ end }}
+        {{ range $e := .Params.how_it_works }}
+        <div class="column is-4 py-0 px-4">
           {{ $e.bullets | safeHTML }}
         </div>
         {{ end }}
       </div>
-      <div class="columns">
+      <div class="columns mt-4">
         {{ range $e := .Params.how_it_works }}
-        <div class="column is-4 px-5 content">
+        <div class="column is-4 px-5">
           <div class="level">
             <div class="level-item has-text-dark-brown">
               <i class="fas {{ $e.icon }} fa-8x fa-centered mb-3"></i>
@@ -89,62 +108,69 @@
     <h2 class=" is-size-1 mb-0 pt-3 has-text-weight-light">How to Join</h2>
     <hr style="border: 0.2px solid black" class="mt-0 pt-0">
     {{ range $e := .Params.how_to_join }}
-    <div class="collapsible-wrapper mx-2 is-vcentered is-mobile">
-      <div class="mx-3">
-        <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
-      </div>
-      <div class="columns is-mobile is-vcentered is-gapless mx-3 mb-0">
-        <div class = "column is-four-fifths has-text-weight-bold">
-          <br>
-          {{ $e.subtitle | safeHTML }}
+    <div class="block">
+      <div class="collapsible-wrapper mx-2 is-vcentered is-mobile">
+        <div class="mx-3">
+          <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
         </div>
-        <div class = "column is-one-fifth">
-          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light fas fa-chevron-down px-0" aria-label="chevron" onclick="ToggleExpand(this)">
-          </button>
+        <div class="columns is-mobile is-vcentered is-gapless mx-3 mb-0">
+          <div class = "column is-four-fifths has-text-weight-bold">
+            <br>
+            {{ $e.subtitle | safeHTML }}
+          </div>
+          <div class = "column is-one-fifth">
+            <button style="border: none; outline: none;" class="title is-pulled-right has-background-light fas fa-chevron-down px-0" aria-label="chevron" onclick="ToggleExpand(this)">
+            </button>
+          </div>
+        </div>
+        <div id="blurb0" class="is-collapsible content mx-2">
+          {{ $e.bullets | safeHTML }}
         </div>
       </div>
-      <div id="blurb0" class="is-collapsible content mx-2">
-        {{ $e.bullets | safeHTML }}
-      </div>
-    </div>
-    <div class="my-4">
-      <div class="level">
-        <div class="level-item has-text-info">
-          <i class="fas {{ $e.icon }} fa-4x fa-centered mb-3"></i>
+      <div class="my-4">
+        <div class="level">
+          <div class="level-item has-text-info">
+            <i class="fas {{ $e.icon }} fa-4x fa-centered mb-3"></i>
+          </div>
         </div>
       </div>
     </div>
     {{ end }}
 
+
     <h2 class=" is-size-1 mb-0 pt-3 has-text-weight-light">How the Talent Pool Works</h2>
     <hr style="border: 0.2px solid black" class="mt-0 pt-0">
+
     {{ range $e := .Params.how_it_works }}
-    <div class="collapsible-wrapper mx-2 is-vcentered is-mobile">
-      <div class="mx-3">
-        <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
-      </div>
-      <div class="columns is-mobile is-vcentered is-gapless mx-3 mb-0">
-        <div class = "column is-four-fifths has-text-weight-bold">
-          <br>
-          {{ $e.subtitle | safeHTML }}
+    <div class="block">
+      <div class="collapsible-wrapper mx-2 is-vcentered is-mobile">
+        <div class="mx-3">
+          <h2 style="word-break: normal" class="title has-text-weight-light">{{ $e.title }}</h2>
         </div>
-        <div class = "column is-one-fifth">
-          <button style="border: none; outline: none;" class="title is-pulled-right has-background-light fas fa-chevron-down px-0" aria-label="chevron" onclick="ToggleExpand(this)">
-          </button>
+        <div class="columns is-mobile is-vcentered is-gapless mx-3 mb-0">
+          <div class = "column is-four-fifths has-text-weight-bold">
+            <br>
+            {{ $e.subtitle | safeHTML }}
+          </div>
+          <div class = "column is-one-fifth">
+            <button style="border: none; outline: none;" class="title is-pulled-right has-background-light fas fa-chevron-down px-0" aria-label="chevron" onclick="ToggleExpand(this)">
+            </button>
+          </div>
+        </div>
+        <div id="blurb0" class="is-collapsible content mx-2">
+          {{ $e.bullets | safeHTML }}
         </div>
       </div>
-      <div id="blurb0" class="is-collapsible content mx-2">
-        {{ $e.bullets | safeHTML }}
-      </div>
-    </div>
-    <div class="my-4">
-      <div class="level">
-        <div class="level-item has-text-dark-browb">
-          <i class="fas {{ $e.icon }} fa-4x fa-centered mb-3"></i>
+      <div class="my-4">
+        <div class="level">
+          <div class="level-item has-text-dark-browb">
+            <i class="fas {{ $e.icon }} fa-4x fa-centered mb-3"></i>
+          </div>
         </div>
       </div>
     </div>
     {{ end }}
+
     <div class="has-text-centered py-4">
       <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
     </div>
