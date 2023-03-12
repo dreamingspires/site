@@ -10,9 +10,9 @@
 <a id="register_client" style="font-size: 0"></a>
 
 <section class="is-hidden-touch">
-  <section id="client_desk_1" class="is-hero is-fullheight-with-navbar has-background-info has-text-light is-hidden-touch pt-6">
+  <section id="client_desk_1" class="section has-background-info has-text-light pb-0">
 
-    <div class="tile is-ancestor mx-6">
+    <div class="tile is-ancestor">
       <div class="tile is-parent is-12 is-horizontal mb-3">
           <!-- <div class="tile is-child is-1"></div> -->
         <div class="tile is-child is-8 content">
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <div class="columns mx-6">
+    <div class="columns">
       <div class="column is-2">
         <hr style="border: 1px solid;" class="new subtitle">
       </div>
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="columns mx-6 my-0">
+    <div class="columns my-0">
       {{ range $i, $e := .Params.client_text }}
       {{ if le $i 2 }}
         <div class="column">
@@ -57,7 +57,7 @@
       {{ end }}
       {{ end }}
     </div>
-    <div class="columns mx-6 my-0">
+    <div class="columns my-0">
       {{ range $i, $e := .Params.client_text }}
       {{ if le $i 2 }}
         <div class="column">
@@ -70,7 +70,7 @@
       {{ end }}
       {{ end }}
     </div>
-    <div class="columns mx-6 my-0">
+    <div class="columns my-0">
       {{ range $i, $e := .Params.client_text }}
       {{ if le $i 2 }}
         <div class="column">
@@ -79,7 +79,7 @@
       {{ end }}
       {{ end }}
     </div>
-    <div class="columns mx-6 my-0">
+    <div class="columns  my-0">
       {{ range $i, $e := .Params.client_text }}
       {{ if le $i 2 }}
         <div class="column">
@@ -95,8 +95,8 @@
 
   </section>
 
-  <section id="client_desk_2" class="is-hero has-background-light pt-6 pb-0">
-    <div class="tile is-ancestor mx-6">
+  <section id="client_desk_2" class="section has-background-light pt-6 pb-0">
+    <div class="tile is-ancestor">
       <div class="tile is-vertical">
         <div class="tile is-horizontal is-parent">
           <div class="tile is-child is-12">
@@ -210,18 +210,18 @@
 <!-- Mobile section -->
 
 <section id="client_desk_1" class="is-hidden-desktop ">
-  <section class="is-hero has-background-info has-text-light pb-0">
-    <div class="is-8 content px-6 pt-3" >
+  <section class="section has-background-info has-text-light pb-0">
+    <div class="is-8 block px-3 py-3" >
       {{ .Params.welcome_page.text | safeHTML }}
     </div>
     <div class="mt-6 px-6">
-      <p class="subtitle subtitle-on-dark is-size-3 mb-0 has-text-centered mb-3">
+      <p class="subtitle subtitle-on-dark is-size-4 mb-0 has-text-centered mb-3">
         Know what you need?
       </p>
       <div class="level">
         <div class="buttons level-item">
           <a class="button is-warning is-rounded is-size-4" href="#signup">
-            <p class="is-size-3">
+            <p class="is-size-4">
               Get in Touch
             </p>
           </a>
