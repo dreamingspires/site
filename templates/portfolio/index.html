@@ -1,20 +1,25 @@
 {{ define "body" }}
 <section class="hero">
-  <div class="hero-body" style="background-image: url('/assets/images/photos/oxford_arial.jpg'); background-position: center; height:400px; background-size: cover">
-    <div class="container has-text-centered mt-6">
-      <h1 class="title is-2 has-text-white" style="text-shadow: 1px 1px 2px black">{{ .Title }}</h1>
-    </div>
-  </div>
+  {{ partial "landing.html" "" | safeHTML }}
 </section>
 
-<div style="float: right">
-  <p class="is-size-5 m-3">
-    <a href="/portfolio/atom.xml">[feed]</a>
-  </p>
-</div>
 
-<section class="container is-widescreen">
-  <div class="section mt-4">
+<section class="section has-background-info has-text-left pb-0">
+  <div class="block px-3">
+    <h1 class="title is-1">Portfolio</h1>
+    <p class="subtitle is-4">Project Spotlights, Blog posts from the team</p>
+  </div>
+  <div class="has-text-centered py-4">
+    <a href="#posts" class="title is-2 fas fa-chevron-down has-text-white"></a>
+  </div>
+</section>
+<section id="posts" class="container is-widescreen">
+  <div style="float: right">
+    <p class="is-size-5 m-3">
+      <a href="/portfolio/atom.xml">[feed]</a>
+    </p>
+  </div>
+  <div class="section">
     <div class="columns is-mobile">
       <div class="column background-primary-dark is-11 is-10-desktop">
         {{ range .Pages }}
