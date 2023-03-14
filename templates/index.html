@@ -135,7 +135,7 @@
 </section>
 
 <section id="page_2" class="section is-fullwidth is-medium has-background-light pt-6 pb-0 px-6">
-  <div class="block">
+  <div class="block has-text-centered mb-6">
     <h1 class="title is-2 has-text-dark">Our Development Process</h1>
     <p class="subtitle is-4 has-text-primary is-italic">The Unique Dreaming Spires Model</p>
   </div>
@@ -144,15 +144,20 @@
   <div class="content">
     <div class="columns is-centered is-hidden-desktop mt-2">
       <div class="column is-11">
-        {{ range $entry := .Params.timeline }}
-          <div class="columns is-mobile is-vcentered">
+        {{ range $index, $entry := .Params.timeline }}
+          <div class="columns is-mobile is-vcentered mb-5">
             <div class="column is-3 has-text-centered">
               <span class="icon is-large" style="color: {{ index $entry "colour" }}">
                 <i class="fas fa-3x {{ index $entry "logo" }}"></i>
               </span>
             </div>
             <div class="column is-9">
-              {{ index $entry "text" | safeHTML }}
+              <h2 class="subtitle is-3 has-text-weight-semibold mb-2">
+                {{ math.Add $index 1 }}. &nbsp;{{ index $entry "title" | safeHTML }}
+              </h2>
+              <p>
+                {{ index $entry "text" | safeHTML }}
+              </p>
             </div>
           </div>
         {{ end }}
@@ -160,35 +165,34 @@
     </div>
   </div>
 
-
-	<!-- Desktop timeline -->
-  <div class="content is-size-5">
-    <div class="container is-hidden-touch">
-      <div style="display: grid; align-items: center; grid-template-columns: repeat(12, 1fr); grid-auto-rows: 1fr;">
+  <!-- Desktop timeline -->
+  <div class="content is-size-5 is-hidden-touch">
+    <div class="container is-max-widescreen">
+      <div id="timeline">
+        {{ $maxindex := (math.Add (len .Params.timeline) -1) }}
         {{ range $index, $entry := .Params.timeline }}
+          <div class="py-4 px-6 is-flex is-flex-direction-column is-flex-wrap-nowrap is-align-items-center" style="grid-column: 2 / 3; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}" class="has-text-centered">
+            <div style="display: inline-block; text-align: center; height: auto; color: {{ index $entry "colour" }}">
+              <i class="fas fa-3x {{ index $entry "logo" }}"></i>
+            </div>
+            {{ if (ne $index $maxindex) }}
+            <div style="border-left: 1px solid {{ index $entry "colour" }}; border-right: 1px solid  {{ index $entry "colour" }}; width: 0%; flex: 1; margin: 1rem 0 -1rem 0"></div>
+            {{ end }}
+          </div>
           {{ if (eq (math.Mod $index 2) 1) }}
-            <div style="grid-column-end: span 5">
-            </div>
-            <div style="grid-column-end: span 2" class="has-text-centered">
-              <span class="icon is-large" style="color: {{ index $entry "colour" }}">
-                <i class="fas fa-3x {{ index $entry "logo" }}"></i>
-              </span>
-            </div>
-            <div style="grid-column-end: span 5">
-              {{ index $entry "text" | safeHTML }}
-            </div>
+          <div class="box arrow arrow--right" style="grid-column: 1 / 2; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}; background-color: {{ index $entry "colour" }}">
           {{ else }}
-            <div style="grid-column-end: span 5">
-              {{ index $entry "text" | safeHTML }}
-            </div>
-            <div style="grid-column-end: span 2" class="has-text-centered">
-              <span class="icon is-large" style="color: {{ index $entry "colour" }}">
-                <i class="fas fa-3x {{ index $entry "logo" }}"></i>
-              </span>
-            </div>
-            <div style="grid-column-end: span 5">
-            </div>
+          <div class="box arrow arrow--left" style="grid-column: 3 / 4; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}; background-color: {{ index $entry "colour" }}">
           {{ end }}
+            <div class="block pb-6">
+              <h2 class="subtitle has-text-weight-semibold  has-text-light">
+                {{ math.Add $index 1 }}. &nbsp;{{ index $entry "title" | safeHTML }}
+              </h2>
+              <p class="has-text-light">
+                {{ index $entry "text" | safeHTML }}
+              </p>
+            </div>
+          </div>
         {{ end }}
       </div>
     </div>
