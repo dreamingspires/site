@@ -3,6 +3,7 @@ title: "Modernising TEAM: Transport Energy and Air Pollution Model"
 date: 2021-05-12
 params:
   author: "Elliott Hughes"
+  img_caption: "/assets/portfolio/team/team_1.png"
 ---
 
 Another group under Climate Compatible Growth (CCG) Research has been working to help reduce air-pollution from transportation.

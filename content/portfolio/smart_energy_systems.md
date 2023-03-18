@@ -3,6 +3,7 @@ title: "Assessing the Feasibility of Smart Local Energy Systems Modelling Projec
 date: 2021-04-05
 params:
   author: "Elliott Hughes"
+  img_caption: "/assets/portfolio/smart_energy_systems/network_editor.png"
 ---
 
 Open source software that’s poised to make a real impact - this is the ethos of CCG (Climate Compatible Growth) Research who have been investigating ways to improve the accessibility of computational tools for modelling energy and transport infrastructure.

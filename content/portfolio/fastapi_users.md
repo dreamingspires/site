@@ -3,6 +3,8 @@ title: "Establishing Modular User Verification Systems with FastAPI-Users"
 date: 2020-12-16
 params:
   author: Mark Todd, Senior Engineer
+  img_caption: "/assets/portfolio/fastapi_users/overall_architecture.png"
+
 ---
 
 Dreaming Spires has begun work on an exciting new project - the Web Platform.
