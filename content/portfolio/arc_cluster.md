@@ -3,6 +3,8 @@ title: "Running code at Supercompute Scale on the ARC Cluster"
 date: 2020-11-03
 params:
   author: "Edd Salkield"
+  img_caption: "/assets/portfolio/arc_cluster/over-arctic_0.jpg"
+
 ---
 
 <img src="/assets/portfolio/arc_cluster/over-arctic_0.jpg">

@@ -3,6 +3,8 @@ title: "grant_remote_access: providing trusted remote assistance for Linux serve
 date: 2021-06-03
 params:
   author: Edd Salkield
+  img_caption: "/assets/portfolio/grant_remote_access/screenshot.png"
+
 ---
 
 Research software projects are all about empowering research teams with the tools that they need; it’s one thing to have the code written, but it’s only useful once it’s understood by and integrated with the research group.

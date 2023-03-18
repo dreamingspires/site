@@ -3,6 +3,7 @@ title: "Project Spotlight: Oxford Mindmap"
 date: 2020-10-01
 params:
   author: "Edd Salkield"
+  img_caption: "/assets/portfolio/project_spotlight_oxford_mindmap/in_range.png"
 ---
 
 We are excited to announce the release of the latest mobile app developed by Dreaming Spires:

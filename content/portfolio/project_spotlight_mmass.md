@@ -3,6 +3,8 @@ title: "Project Spotlight: mMass"
 date: 2020-09-21
 params:
   author: "Edd Salkield"
+  img_caption: "/assets/portfolio/project_spotlight_mmass/blog_banner.jpg"
+
 ---
 
 <img src="/assets/portfolio/project_spotlight_mmass/blog_banner.jpg">

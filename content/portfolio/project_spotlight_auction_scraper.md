@@ -3,6 +3,8 @@ title: "Project Spotlight: auction-scraper"
 date: 2020-09-07
 params:
   author: "Edd Salkield"
+  img_caption: "/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg"
+
 ---
 
 <img src="/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg">

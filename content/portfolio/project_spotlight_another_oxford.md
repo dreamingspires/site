@@ -3,6 +3,8 @@ title: "Project Spotlight: Another Oxford"
 date: 2020-12-08
 params:
   author: "Edd Salkield"
+  img_caption: "/assets/portfolio/project_spotlight_another_oxford/banner.jpg"
+
 ---
 
 <img src="/assets/portfolio/project_spotlight_another_oxford/banner.jpg">
