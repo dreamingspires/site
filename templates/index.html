@@ -171,23 +171,28 @@
       <div id="timeline">
         {{ $maxindex := (math.Add (len .Params.timeline) -1) }}
         {{ range $index, $entry := .Params.timeline }}
-          <div class="py-4 px-6 is-flex is-flex-direction-column is-flex-wrap-nowrap is-align-items-center" style="grid-column: 2 / 3; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}" class="has-text-centered">
-            <div style="display: inline-block; text-align: center; height: auto; color: {{ index $entry "colour" }}">
-              <i class="fas fa-3x {{ index $entry "logo" }}"></i>
-            </div>
+          <div class="py-2 px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 1 }} / {{ math.Add (math.Mul $index 3) 2 }}" class="has-text-centered">
+            <span class="is-size-1" style="font-family: 'Impact', 'Anton', 'Arial Narrow Bold', sans-serif; color: {{ index $entry "colour" }}">{{ math.Add $index 1 }}</span>
+          </div>
+          <div class="px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 2 }} / {{ math.Add (math.Mul $index 3) 4 }};">
             {{ if (ne $index $maxindex) }}
-            <div style="border-left: 1px solid {{ index $entry "colour" }}; border-right: 1px solid  {{ index $entry "colour" }}; width: 0%; flex: 1; margin: 1rem 0 -1rem 0"></div>
+            <div style="border-left: 1px solid {{ index $entry "colour" }}; border-right: 1px solid  {{ index $entry "colour" }}; width: 0%; height: 100%; min-height: 6rem;"></div>
+            {{ else }}
+            <div style="width: 0%; height: 100%; min-height: 6rem;"></div>
             {{ end }}
           </div>
           {{ if (eq (math.Mod $index 2) 1) }}
-          <div class="box arrow arrow--right" style="grid-column: 1 / 2; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}; background-color: {{ index $entry "colour" }}">
+          <div class="box p-5 mb-6 arrow arrow--right" style="grid-column: 1 / 2; grid-row: {{ math.Add (math.Mul $index 3) 1 }} / {{ math.Add (math.Mul $index 3) 6 }}; background-color: {{ index $entry "colour" }}">
           {{ else }}
-          <div class="box arrow arrow--left" style="grid-column: 3 / 4; grid-row: {{ math.Add $index 1 }} / {{ math.Add $index 2 }}; background-color: {{ index $entry "colour" }}">
+          <div class="box p-5 mb-6 arrow arrow--left" style="grid-column: 3 / 4; grid-row: {{ math.Add (math.Mul $index 3) 1 }} / {{ math.Add (math.Mul $index 3) 6 }}; background-color: {{ index $entry "colour" }}">
           {{ end }}
             <div class="block pb-6">
-              <h2 class="subtitle has-text-weight-semibold  has-text-light">
-                {{ math.Add $index 1 }}. &nbsp;{{ index $entry "title" | safeHTML }}
-              </h2>
+              <div class="is-inline-flex is-align-items-center is-size-4-desktop is-size-3-widescreen has-text-light has-text-weight-semibold mb-4">
+                <i class="fas {{ index $entry "logo" }}"></i>
+                <p class="ml-5 subtitle is-size-4-desktop is-size-3-widescreen  has-text-light has-text-weight-semibold">
+                  {{ index $entry "title" | safeHTML }}
+                </p>
+              </div>
               <p class="has-text-light">
                 {{ index $entry "text" | safeHTML }}
               </p>
