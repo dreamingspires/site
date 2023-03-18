@@ -23,17 +23,17 @@
       {{ range .Pages }}
       <div class="column is-4-desktop is-3-fullhd mb-4">
         <a href="{{ .URL }}" class="is-flex is-flex-direction-column" style="height: 100%" >
-          <div class="card is-flex-grow-1 is-flex is-flex-direction-column is-flex-wrap-nowrap has-background-white">
+          <div class="card is-flex-grow-1 is-flex is-flex-direction-column is-flex-wrap-nowrap has-background-white-ter">
             <div class="card-image">
               <figure class="image is-5by3 has-background-white-ter">
-                <img class="py-2" src="{{ .Params.img_caption }}" alt="{{ .Title }}" style="object-fit:contain">
+                <img class="" src="{{ .Params.img_caption }}" alt="{{ .Title }}" style="object-fit:cover">
               </figure>
             </div>
             <div class="card-content p-4 is-flex-grow-1 is-flex is-flex-direction-column is-flex-wrap-nowrap">
                 <h2 class="title is-5 is-flex-grow-1">{{ .Title }}</h2>
                 <div>
                   <p class="">{{ .Params.author }}</p>
-                  <p class="has-text-grey-light">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</p>
+                  <p class="has-text-grey">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</p>
                 </div>
             </div>
           </div>
