@@ -4,7 +4,7 @@ date: 2020-11-03
 params:
   author: "Edd Salkield"
   img_caption: "/assets/portfolio/arc_cluster/over-arctic_0.jpg"
-
+  description: "Successfully and reliably deploying the Auction Scraper application on the ARC Supercomputing cluster for the Department of Anthropology at University of Oxford"
 ---
 
 <img src="/assets/portfolio/arc_cluster/over-arctic_0.jpg" alt="ARC cluster">
