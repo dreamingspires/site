@@ -4,12 +4,12 @@ date: 2020-09-07
 params:
   author: "Edd Salkield"
   img_caption: "/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg"
-
+  description: "Auction Scraper is a CLI app built for scraping auction houses like ebay, liveauctioneers, etc., to provide researchers with a complete picture of auctions running for a particular entity of interest. DreamingSpires develops high quality CLI applications for research projects at all stages and scales."
 ---
 
 <img src="/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg" alt="">
 
-This project spotlight is dedicated to _[auction-scraper](https://dreamingspires.dev/github.com/dreamingspires/auction-scraper)_, an open source, extensible auction house scraper for ebay, liveauctioneers, and other platforms.
+This project spotlight is dedicated to _[auction-scraper](https://github.com/dreamingspires/auction-scraper)_, an open source, extensible auction house scraper for ebay, liveauctioneers, and other platforms.
 Built for the [School of Anthropology at the University of Oxford](https://www.anthro.ox.ac.uk/), it serves as a fantastic example of how computational talent can bring tremendous value in unlikely places!
 
 <div class="card mr-3 has-background-primary-dark" style="float: left; width:60%">
