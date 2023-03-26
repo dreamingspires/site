@@ -4,7 +4,7 @@ date: 2021-04-05
 params:
   author: "Elliott Hughes"
   img_caption: "/assets/portfolio/smart_energy_systems/network_editor.png"
-  description: "DreamingSpires team conducted a comprehensive feasibility study to make OPEN more accessible to the research community. The team worked to capture and distill the requirements for the OPEN UI, from team behind OPEN and its users, producing high definition design documents and code architecture reports to guide the development along with costing."
+  description: "Dreaming Spires team conducted a comprehensive feasibility study to make OPEN more accessible to the research community. The team worked to capture and distill the requirements for the OPEN UI, from team behind OPEN and its users, producing high definition design documents and code architecture reports to guide the development along with costing."
 ---
 
 Open source software that’s poised to make a real impact - this is the ethos of CCG (Climate Compatible Growth) Research who have been investigating ways to improve the accessibility of computational tools for modelling energy and transport infrastructure.
