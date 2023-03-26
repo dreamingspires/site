@@ -102,7 +102,6 @@ body {
 }
 
 .navbar {
-    height: 56px;
     background-color: $brand-dark;
 }
 
@@ -113,6 +112,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+// This seems to be unused though
 body > footer {
     margin-top: auto;
     min-height: calc(100px + 1rem);
@@ -139,8 +139,7 @@ body > footer {
     min-height: 100vh;
 }
 .is-fullheight-with-footer-and-navbar {
-    min-height: calc(100vh - 166px - 1rem);
-
+    min-height: calc(100vh - 3.25rem - 132px);
 }
 
 .is-square-image-128x128 {
