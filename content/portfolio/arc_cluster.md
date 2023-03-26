@@ -7,7 +7,7 @@ params:
 
 ---
 
-<img src="/assets/portfolio/arc_cluster/over-arctic_0.jpg">
+<img src="/assets/portfolio/arc_cluster/over-arctic_0.jpg" alt="ARC cluster">
 
 _Banner photo courtesy of Oxford's [Advanced Research Computing division](https://www.arc.ox.ac.uk/overview)._
 

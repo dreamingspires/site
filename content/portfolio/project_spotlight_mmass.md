@@ -7,7 +7,7 @@ params:
 
 ---
 
-<img src="/assets/portfolio/project_spotlight_mmass/blog_banner.jpg">
+<img src="/assets/portfolio/project_spotlight_mmass/blog_banner.jpg" alt="">
 
 Today we dive straight into scientific research as we look at [mMass](https://github.com/dreamingspires/mMass), a mass spectrometry toolkit for chemical analysis, and how Dreaming Spires has been working to overhaul the program to run on modern operating systems.
 mMass has been discontinued now for seven years and so fails to execute on most computers due to the age of its libraries.

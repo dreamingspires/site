@@ -15,12 +15,12 @@ From today, it's available on all major mobile app stores.
 <div class="columns is-centered">
   <div class="column is-flex" style="justify-content: center">
     <a href="https://apps.apple.com/gb/app/oxford-mindmap/id1532875106">
-      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/app-store-badge.png" width="152" height="45">
+      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/app-store-badge.png" alt="Apple AppStore badge" width="152" height="45">
     </a>
   </div>
   <div class="column is-flex" style="justify-content: center">
     <a href="https://play.google.com/store/apps/details?id=dev.dreamingspires.oxford_mindmap">
-      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/play-store-badge.png" width="152" height="45">
+      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/play-store-badge.png" alt="Google Playstore badge" width="152" height="45">
     </a>
   </div>
 </div>
@@ -31,7 +31,7 @@ Through the app, users can explore Oxford, its locations and its buildings, as t
 <div class="card mr-3 has-background-primary-dark" style="float: left; width:60%">
   <div class="card-content">
     <figure class="image">
-    <img style="width: 60%" src="/assets/portfolio/project_spotlight_oxford_mindmap/in_range.png">
+    <img style="width: 60%" src="/assets/portfolio/project_spotlight_oxford_mindmap/in_range.png" alt="Screenshot of the app showing a story being unlocked as a user crosses Magdalen bridge">
 </figure>
   </div>
   <footer class="card-footer">
@@ -56,7 +56,7 @@ Such stories are subsequently hidden from view.
 <div class="card mr-3 has-background-primary-dark" style="float: right; width:70%">
   <div class="card-content">
     <figure class="image mx-0">
-    <img src="/assets/portfolio/project_spotlight_oxford_mindmap/admin_console.png">
+    <img src="/assets/portfolio/project_spotlight_oxford_mindmap/admin_console.png" alt="Screenshot of the admin console used to modify story information on-the-fly">
 
 </figure>
   </div>

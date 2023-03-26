@@ -15,7 +15,7 @@ With the main objective of bringing TEAM’s underlying value and utility in pol
 Alongside this, Dreaming Spires drew upon its developer pool to investigate ways the utility and accessibility of TEAM could be improved.
 A Pre-Computation Engine that could provide fast approximate results according to the model's behaviour was proposed, offering sufficient responsiveness for viable development of a Graphical User Interface (GUI) for TEAM, much akin to the [MacKay Carbon Calculator](https://mackaycarboncalculator.beis.gov.uk/overview/emissions-and-primary-energy-consumption).
 
-<img src="/assets/portfolio/team/team_1.png">
+<img src="/assets/portfolio/team/team_1.png" alt="The TEAM design draft, with a flexible interface for multi-type graphing">
 
 _The TEAM design draft, with a flexible interface for multi-type graphing_
 

@@ -7,7 +7,7 @@ params:
 
 ---
 
-<img src="/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg">
+<img src="/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg" alt="">
 
 This project spotlight is dedicated to _[auction-scraper](https://dreamingspires.dev/github.com/dreamingspires/auction-scraper)_, an open source, extensible auction house scraper for ebay, liveauctioneers, and other platforms.
 Built for the [School of Anthropology at the University of Oxford](https://www.anthro.ox.ac.uk/), it serves as a fantastic example of how computational talent can bring tremendous value in unlikely places!
