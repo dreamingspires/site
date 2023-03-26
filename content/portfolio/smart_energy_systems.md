@@ -13,14 +13,14 @@ We’re grateful for the opportunity to collaborate with this group, in which we
 It serves to support the modelling of energy markets, power flow, and optimisation energy resource scheduling through its Python interface.
 It has a [published paper](https://www.researchgate.net/profile/Thomas-Morstyn/publication/342849801_OPEN_An_open-source_platform_for_developing_smart_local_energy_system_applications/links/5f0b5c5e299bf1881617761e/OPEN-An-open-source-platform-for-developing-smart-local-energy-system-applications.pdf) detailing its operation!
 
-<img src="/assets/portfolio/smart_energy_systems/network_editor.png">
+<img src="/assets/portfolio/smart_energy_systems/network_editor.png" alt="Network Editor UI design draft">
 
 _The network editor UI design draft_
 
 With the aim of improving accessibility of the tool, we’ve considered the impact of the creation of a GUI, enabling non-specialists to model their own energy grids and draw new conclusions.
 Through calls with the existing team and potential users alike, we worked to capture and distil the requirements of the OPEN UI, producing high definition design documents and code architecture reports to guide the ongoing development.
 
-<img src="/assets/portfolio/smart_energy_systems/open_options.png">
+<img src="/assets/portfolio/smart_energy_systems/open_options.png" alt="Image with a table of summary of options broken down into developmental stages">
 
 _Summary of options, broken down into developmental stages_
 

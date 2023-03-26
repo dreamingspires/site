@@ -7,7 +7,7 @@ params:
 
 ---
 
-<img src="/assets/portfolio/project_spotlight_another_oxford/banner.jpg">
+<img src="/assets/portfolio/project_spotlight_another_oxford/banner.jpg" alt="">
 
 Auditory hallucinations can appear in a number of different psychiatric disorders.
 However, for people who haven't experienced these symptoms, it may be difficult to understand and empathise with the impact on daily life this causes.
@@ -21,12 +21,12 @@ You can find it, currently available, on all major mobile app stores.
 <div class="columns is-centered">
   <div class="column is-flex" style="justify-content: center">
     <a href="https://apps.apple.com/gb/app/another-oxford/id1536129447">
-      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/app-store-badge.png" width="152" height="45">
+      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/app-store-badge.png" alt="Apple app store badge" width="152" height="45">
     </a>
   </div>
   <div class="column is-flex" style="justify-content: center">
     <a href="https://play.google.com/store/apps/details?id=dev.dreamingspires.another_oxford">
-      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/play-store-badge.png" width="152" height="45">
+      <img src="/assets/portfolio/project_spotlight_oxford_mindmap/play-store-badge.png" alt="Google Play store badge"width="152" height="45">
     </a>
   </div>
 </div>
@@ -36,7 +36,7 @@ Created in partnership with the Oxford Ideas Festival, Another Oxford is designe
 <div class="card mr-3 has-background-primary-dark" style="float: left; width:40%">
   <div class="card-content">
     <figure class="image">
-    <img style="width: 60%" src="/assets/portfolio/project_spotlight_another_oxford/htc.png">
+    <img style="width: 60%" src="/assets/portfolio/project_spotlight_another_oxford/htc.png" alt="Screenshot of the app showing the view of the city of Oxford, with a planned route open">
 </figure>
   </div>
   <footer class="card-footer">

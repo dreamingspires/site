@@ -14,7 +14,7 @@ But big things have small beginnings, and over the past couple of weeks we've st
 This component is called Users, and it is built upon the module FastAPI-Users to provide secure user login and authentication primitives.
 However, in its current version, FastAPI-Users does not contain a method for user verification (required for users to be verified via email upon login), and required it to be built on top.
 
-<img src="/assets/portfolio/fastapi_users/overall_architecture.png">
+<img src="/assets/portfolio/fastapi_users/overall_architecture.png" alt="FastAPI Users Architecture">
 
 _The overall architecture of the Web Platform, demonstrating the purpose of the Users component._
 
