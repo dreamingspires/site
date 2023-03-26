@@ -1,7 +1,7 @@
 ---
 title: Privacy policy
 params:
-    description: "Details about DreamingSpires privacy policy"
+    description: "Details about Dreaming Spires privacy policy"
 ---
 If you have any questions, please reach out to us at <a href="mailto:contact@dreamingspires.dev">contact@dreamingspires.dev</a>.
 

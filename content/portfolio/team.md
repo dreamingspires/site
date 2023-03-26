@@ -2,7 +2,7 @@
 title: "Modernising TEAM: Transport Energy and Air Pollution Model"
 date: 2021-05-12
 params:
-  description: "DreamingSpires team worked on Transport Energy Air-pollution Model (TEAM), a computer model for predicting air-pollution outcomes of policies at individual, organisational, regional and national policies. The team worked on building a comprehensive open-source library around the model and conducted a comprehensive feasibility study on building a GUI and improving the computational performance of the model."
+  description: "Dreaming Spires team worked on Transport Energy Air-pollution Model (TEAM), a computer model for predicting air-pollution outcomes of policies at individual, organisational, regional and national policies. The team worked on building a comprehensive open-source library around the model and conducted a comprehensive feasibility study on building a GUI and improving the computational performance of the model."
   author: "Elliott Hughes"
   img_caption: "/assets/portfolio/team/team_1.png"
 ---

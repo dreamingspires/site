@@ -4,7 +4,7 @@ date: 2020-12-16
 params:
   author: Mark Todd, Senior Engineer
   img_caption: "/assets/portfolio/fastapi_users/overall_architecture.png"
-  description: "DreamingSpires team contributed to the user verification system in the  FastAPI-Users open-source project"
+  description: "Dreaming Spires team contributed to the user verification system in the  FastAPI-Users open-source project"
 ---
 
 Dreaming Spires has begun work on an exciting new project - the Web Platform.
