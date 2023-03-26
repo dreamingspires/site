@@ -17,6 +17,18 @@
   {{ end }}
   <link rel="icon" href="/assets/images/logos/favicon.svg">
 
+  <!-- Prefetch hero and banner images for site -->
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/logos/mini_logo_dark.svg"
+    imagesrcset="/assets/images/logos/mini_logo_dark.svg 165w, /assets/images/logos/logo_dark.svg 300w"
+    imagesizes="(max-width: 760px) 1px, 301px"/>
+  <link
+    rel="preload"
+    as="image"
+    href="/assets/images/backgrounds/oxford_skyline_full.svg" />
+
   <!-- CSS -->
   <!-- TODO: do we really need this many icon sets? -->
   <link rel="stylesheet" href="/assets/css/style.css">
