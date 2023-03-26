@@ -4,7 +4,7 @@ date: 2021-06-03
 params:
   author: Edd Salkield
   img_caption: "/assets/portfolio/grant_remote_access/screenshot.png"
-
+  description: "DreamingSpires team made it easy for clients to allow trusted access to their Linux servers so that the dev team can provide remote assistance while providing the client with complete control over the connection."
 ---
 
 Research software projects are all about empowering research teams with the tools that they need; it’s one thing to have the code written, but it’s only useful once it’s understood by and integrated with the research group.

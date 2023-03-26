@@ -1,3 +1,8 @@
+---
+title: Privacy policy
+params:
+    description: "Details about DreamingSpires privacy policy"
+---
 If you have any questions, please reach out to us at <a href="mailto:contact@dreamingspires.dev">contact@dreamingspires.dev</a>.
 
 This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collected in Dreaming Spires. This policy is not applicable to any information collected offline or via channels other than this website.

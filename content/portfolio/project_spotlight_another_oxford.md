@@ -4,7 +4,7 @@ date: 2020-12-08
 params:
   author: "Edd Salkield"
   img_caption: "/assets/portfolio/project_spotlight_another_oxford/banner.jpg"
-
+  description: "Another Oxford is a mobile app developed by the DreamingSpires team to provide insight into the day-to-day experiences of those who experience auditory hallucinations through walking tours across the city of Oxford. The app is designed for easy modification and over-the-air updates, allowing new routes and sound effects to be added on the fly."
 ---
 
 <img src="/assets/portfolio/project_spotlight_another_oxford/banner.jpg" alt="">

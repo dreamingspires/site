@@ -4,7 +4,7 @@ date: 2020-09-21
 params:
   author: "Edd Salkield"
   img_caption: "/assets/portfolio/project_spotlight_mmass/blog_banner.jpg"
-
+  description: "DreamingSpires updated mMass, a mass spectrometry toolkit, and made it easy to run it on modern operating systems and architectures."
 ---
 
 <img src="/assets/portfolio/project_spotlight_mmass/blog_banner.jpg" alt="">
