@@ -5,7 +5,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.Title }}</title>
+  <title>{{ or .Params.title site.Title }}</title>
+  <!-- meta tags -->
+  <meta property="og:site_name" content="{{ site.Title }}" />
+  <meta property="og:title" content="{{ or .Title site.Title }}" />
+  <meta property="og:type" content="{{ if .Params.author }}article{{ else }}website{{ end }}" />
+  <meta property="og:url" content="{{ .URL }}" />
+  {{ if .Params.description }}
+  <meta name="description" content="{{ .Params.description }}" />
+  <meta property="og:description" content="{{ .Params.description }}" />
+  {{ end }}
   <link rel="icon" href="/assets/images/logos/favicon.svg">
 
   <!-- CSS -->
@@ -25,7 +34,7 @@
 </head>
 
 <body>
-  <a id="top"></a>
+  <section id="top"></a>
   <section class="hero is-info">
     <div class="hero-head">  <div class="columns is-mobile is-centered my-0">
       <div class="column is-11-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd px-0 py-0">  {{ partial "navbar.html" . | safeHTML }}
