@@ -1,25 +1,25 @@
-<nav class="navbar" role="navigation" aria-label="main navigation" style="height: 56px">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
-      <figure style="width: 90px" class="image is-hidden-mobile">
+      <figure class="image is-hidden-mobile">
         <img src="/assets/images/logos/logo_dark.svg" style="max-height: 3rem" alt="Logo">
       </figure>
-      <figure style="width: 40px" class="image is-hidden-tablet">
-        <img src="/assets/images/logos/mini_logo_dark.svg" style="width:100%;" alt="Logo">
+      <figure class="image is-hidden-tablet">
+        <img src="/assets/images/logos/mini_logo_dark.svg" style="max-height: 3rem" alt="Logo">
       </figure>
     </a>
     <!-- mobile "contact us" button outside of navbar -->
     <div class="navbar-item is-hidden-tablet is-hidden-desktop is-hidden-fullhd" style="margin-left: auto">
       <div class="buttons">
         {{ range $value := site.Params.nav.hotlinks }}
-          <a href="{{ index $value "url" }}" class="button is-rounded is-warning" style="font-size: 0.9em">
+          <a href="{{ index $value "url" }}" class="button is-rounded is-warning is-size-6">
             {{ index $value "name" }}
           </a>
         {{ end }}
       </div>
     </div>
     <!-- burger -->
-    <a role="button" class="navbar-burger burger has-text-light ml-0" aria-label="menu" aria-expanded="false" data-target="navMenu">
+    <a role="button" class="navbar-burger p-0 is-align-self-center has-text-light ml-0" aria-label="menu" aria-expanded="false" data-target="navMenu">
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>
@@ -29,10 +29,9 @@
   <div class="navbar-menu" id="navMenu">
     <div class="navbar-end">
 
-      {{/* TODO: style these with some CSS instead */}}
       {{ range $value := site.Params.nav.navbar }}
-        <a href='{{ index $value "url" }}' style="font-size: 0.9em"
-        class="navbar-item has-text-white
+        <a href='{{ index $value "url" }}'
+        class="navbar-item has-text-white is-size-6
           {{ if (eq $.URL (index $value "url")) }}is-active{{ end }}
         ">
           {{ index $value "name" }}
@@ -43,7 +42,7 @@
     <div class="navbar-item is-hidden-mobile">
       <div class="buttons">
         {{ range $value := site.Params.nav.hotlinks }}
-          <a href="{{ index $value "url" }}" class="button is-rounded is-warning" style="font-size: 0.9em">
+          <a href="{{ index $value "url" }}" class="button is-rounded is-warning is-size-6">
             {{ index $value "name" }}
           </a>
         {{ end }}
