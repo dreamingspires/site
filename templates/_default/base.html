@@ -49,14 +49,14 @@
   <section id="top"></section>
   <section class="hero is-info">
     <div class="hero-head">  <div class="columns is-mobile is-centered my-0">
-      <div class="column is-11-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd px-0 py-0">  {{ partial "navbar.html" . | safeHTML }}
+      <div class="column is-11-mobile is-10-tablet px-0 py-0">  {{ partial "navbar.html" . | safeHTML }}
       </div>
     </div>
   </section>
 
 
   <section class="columns is-mobile is-centered my-0 has-background-backdrop is-fullheight-with-footer-and-navbar">
-    <div class="column is-12-mobile is-9-tablet is-10-desktop is-10-widescreen is-10-fullhd has-box-shadow-x px-0 py-0 has-background-light">
+    <div class="column is-12-mobile is-10-tablet has-box-shadow-x px-0 py-0 has-background-light">
       <!-- TODO is_fullpage is not found anywhere else. Add parameter if this section needs to be fullpage-->
       <!--section class="hero{% if is_fullpage %} is-fullheight-with-navbar {% endif %}"-->
         {{ block "fullheight" $ }}{{ end }}
