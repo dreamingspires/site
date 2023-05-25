@@ -2,6 +2,8 @@ title = "Dreaming Spires"
 
 [params]
 fathom_id = "testvalue"
+company_number = 13902798
+company_name = "Dreaming Software Development Ltd"
 
 [params.nav]
 navbar = [
