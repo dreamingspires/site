@@ -21,6 +21,7 @@ Form submission handled via CORS request to [staticforms](https://github.com/dre
 * [npm](https://www.npmjs.com/) - used to pull in dependencies
 * [sass](https://sass-lang.com/) - compile the scss stylesheets to css
 * [entr](https://eradman.com/entrproject/) - used for watch.sh to rebuild files as they change
+* fuse-libs - required for image magick; install with: `sudo dnf install fuse-libs`
 * [imagemagick](https://imagemagick.org/) - used to compress images
 
 Install these preferably with your system package manager.

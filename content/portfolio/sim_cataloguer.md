@@ -7,4 +7,12 @@ params:
     description: "Packaging pixray and other gpt tools into a simple python interface"
 ---
 
-For this project the overall aim was to produce a tool for...
+For this project the overall aim was to produce a module that can generate images based on a the style of writing of a particular author. To do this it trained a model with GPT2 to mimic the author's writing style, then used the generated text as a prompt to generate an image.
+
+The challenges of this project were unexpectedly entirely in the packaging process. The dependent packages were not setup to be simple to combine, but through several workarounds we succeeded in making a single package with all dependencies.
+
+## Links
+
+For the github repository, see here:
+
+https://github.com/dreamingspires/simCataloguer
