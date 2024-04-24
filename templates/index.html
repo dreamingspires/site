@@ -59,7 +59,7 @@
     <p class="subtitle is-3 has-text-primary is-italic">Bringing Programming Talent to Your Research</p>
     <div class="content is-size-5">
       {{ range .Params.welcome_page.text }}
-        <p>{{ . }}</p><br>
+        <p>{{ . | safeHTML }}</p>
       {{ end }}
     </div>
   </div>

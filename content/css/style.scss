@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import "./node_modules/bulma/sass/utilities/initial-variables.sass";
+
 $purple: #8A4D76;
 $pink: #FA7C91;
 $brown: #757763;
@@ -25,7 +27,9 @@ $brand-warning: #D26D48;
 $brand-warning-dark: #AF5737;
 $brand-link: #999999;
 
-$tablet: 761px;
+//$tablet: 30px;
+$tablet:	500px;
+$desktop:	750px + (2 * $gap);
 
 // Update Bulma's global variables
 $primary: $brand-blue;
@@ -281,4 +285,7 @@ ul {
 }
 .has-background-transparent {
     background: transparent !important;
+}
+.is-testimonial-text {
+    font-size: 26px;
 }

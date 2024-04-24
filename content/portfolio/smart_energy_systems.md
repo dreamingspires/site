@@ -3,6 +3,8 @@ title: "Assessing the Feasibility of Smart Local Energy Systems Modelling Projec
 date: 2021-04-05
 params:
   author: "Elliott Hughes"
+  client: Climate Compatible Growth
+  client_url: https://climatecompatiblegrowth.com/
   img_caption: "/assets/portfolio/smart_energy_systems/network_editor.png"
   description: "Dreaming Spires team conducted a comprehensive feasibility study to make OPEN more accessible to the research community. The team worked to capture and distill the requirements for the OPEN UI, from team behind OPEN and its users, producing high definition design documents and code architecture reports to guide the development along with costing."
 ---

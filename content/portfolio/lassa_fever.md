@@ -1,9 +1,11 @@
 ---
-title: "Lassa Fever"
+title: "Modelling the spread of Lassa fever, R to numpy conversion"
 date: 2023-05-25
 params:
     author: "Mark Todd, CEO and Software Developer"
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    client: NTD Modelling Consortium
+    client_url: https://www.ntdmodelling.org/
+    img_caption: "/assets/portfolio/ntd_consortium/logo.png"
     description: "The refactor of the lassa fever disease model"
 ---
 

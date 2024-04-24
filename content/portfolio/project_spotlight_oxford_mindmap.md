@@ -1,8 +1,10 @@
 ---
-title: "Project Spotlight: Oxford Mindmap"
+title: "Oxford Mindmap: mobile app for sharing mental health experiences"
 date: 2020-10-01
 params:
   author: "Edd Salkield"
+  client: Oxford Ideas Festival
+  client_url: https://if-oxford.com/welcome-page/
   img_caption: "/assets/portfolio/project_spotlight_oxford_mindmap/in_range.png"
   description: "Oxford Mindmap is a mobile app designed and built by Dreaming Spires in partnership with Oxford Ideas Festival to provide a new perspective on the city of Oxford. As users explore its locations and its buildings, they can also relate to personal stories of mental health submitted anonymously by its users."
 ---
