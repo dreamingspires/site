@@ -1,8 +1,9 @@
 ---
-title: "Project Spotlight: mMass"
+title: "Redevloping mass spectrometry tools for paleoproteomic applications"
 date: 2020-09-21
 params:
   author: "Edd Salkield"
+  client: Max Planck Institute
   img_caption: "/assets/portfolio/project_spotlight_mmass/blog_banner.jpg"
   description: "Dreaming Spires updated mMass, a mass spectrometry toolkit, and made it easy to run it on modern operating systems and architectures."
 ---

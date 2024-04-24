@@ -1,8 +1,10 @@
 ---
-title: "Project Spotlight: Another Oxford"
+title: "Another Oxford: giving insight into auditory hallucinations"
 date: 2020-12-08
 params:
   author: "Edd Salkield"
+  client: Oxford Ideas Festival
+  client_url: https://if-oxford.com/welcome-page/
   img_caption: "/assets/portfolio/project_spotlight_another_oxford/banner.jpg"
   description: "Another Oxford is a mobile app developed by the Dreaming Spires team to provide insight into the day-to-day experiences of those who experience auditory hallucinations through walking tours across the city of Oxford. The app is designed for easy modification and over-the-air updates, allowing new routes and sound effects to be added on the fly."
 ---

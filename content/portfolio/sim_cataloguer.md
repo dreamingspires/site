@@ -1,5 +1,5 @@
 ---
-title: "Sim Cataloguer"
+title: "Generating AI images inspired by authors' writing styles"
 date: 2023-03-24
 params:
     author: "Mark Todd, CEO and Software Developer"

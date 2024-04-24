@@ -22,22 +22,40 @@
     <div class="columns is-desktop is-multiline">
       {{ range .Pages }}
       <div class="column is-4-desktop is-3-fullhd mb-4">
-        <a href="{{ .URL }}" class="is-flex is-flex-direction-column" style="height: 100%" >
           <div class="card is-flex-grow-1 is-flex is-flex-direction-column is-flex-wrap-nowrap has-background-white-ter">
+            {{ if not .Params.no_url }}
+            <a href="{{ .URL }}" class="is-flex is-flex-direction-column" style="height: 100%" >
+            {{ end }}
             <div class="card-image">
               <figure class="image is-5by3 has-background-white-ter">
                 <img class="" src="{{ .Params.img_caption }}" alt="{{ .Title }}" style="object-fit:cover">
               </figure>
             </div>
+            {{ if not .Params.no_url }}
+            </a>
+            {{ end }}
             <div class="card-content p-4 is-flex-grow-1 is-flex is-flex-direction-column is-flex-wrap-nowrap">
+                {{ if not .Params.no_url }}
+                <a href="{{ .URL }}" class="is-flex is-flex-direction-column" style="height: 100%" >
+                {{ end }}
                 <h2 class="title is-5 is-flex-grow-1">{{ .Title }}</h2>
+                {{ if not .Params.no_url }}
+                </a>
+                {{ end }}
+
+                {{ if .Params.client }}
+                  {{ if .Params.client_url }}
+                    <i><a href="{{ .Params.client_url }}"><p class="subtitle is-6">{{ .Params.client | safeHTML }}</p></a></i>
+                  {{ else }}
+                    <i><p class="subtitle is-6">{{ .Params.client | safeHTML }}</p></i>
+                  {{ end }}
+                {{ end }}
                 <div>
                   <p class="">{{ .Params.author }}</p>
                   <p class="has-text-grey">{{ if not .Date.IsZero -}}{{ .Date.Format "2006-01-02" }}{{ end }}</p>
                 </div>
             </div>
           </div>
-        </a>
       </div>
       {{ end }}
     </div>

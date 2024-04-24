@@ -1,8 +1,10 @@
 ---
-title: "MAT-DP Pipeline"
+title: "Computing and visualising sustainable material demand projections"
 date: 2023-03-26
 params:
     author: "Mark Todd, CEO and Software Developer"
+    client: Department of Engineering, University of Cambridge
+    client_url: http://www.eng.cam.ac.uk/
     img_caption: "/assets/portfolio/mat_dp_pipeline/MatDP2.png"
     description: "The creation of a tool for the processing of geographic data detailing material use"
 ---

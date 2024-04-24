@@ -1,9 +1,11 @@
 ---
-title: "EPIONCHIO-Improvements"
+title: "High performance transmission model for onchocerciasis"
 date: 2022-12-15
 params:
     author: "Mark Todd, CEO and Software Developer"
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    client: NTD Modelling Consortium
+    client_url: https://www.ntdmodelling.org/
+    img_caption: "/assets/portfolio/ntd_consortium/logo.png"
     description: "The optimisation of the EPIONCHO model"
 ---
 

@@ -1,8 +1,9 @@
 ---
-title: "Project Spotlight: auction-scraper"
+title: "Tracking the online sale of African tribal artwork"
 date: 2020-09-07
 params:
   author: "Edd Salkield"
+  client: School of Anthropology & Museum Ethnography, University of Oxford
   img_caption: "/assets/portfolio/project_spotlight_auction_scraper/blog_banner.jpg"
   description: "Auction Scraper is a CLI app built for scraping auction houses like ebay, liveauctioneers, etc., to provide researchers with a complete picture of auctions running for a particular entity of interest. Dreaming Spires develops high quality CLI applications for research projects at all stages and scales."
 ---
