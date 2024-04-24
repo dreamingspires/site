@@ -5,7 +5,7 @@ params:
     author: "Mark Todd, CEO and Software Developer"
     client: Faculty of Philosophy, University of Oxford
     client_url: https://www.philosophy.ox.ac.uk/
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    img_caption: "/assets/portfolio/pyetr/reason_and_inquiry.png"
 ---
 
 The book "Reason and Inquiry: The Erotetic Theory" by Philipp Koralus presents a mathematical representation of human reasoning and decision making. In this project we converted the mathematical representation from the book into python functions.
