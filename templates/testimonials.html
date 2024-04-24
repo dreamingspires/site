@@ -22,41 +22,43 @@
   </section>
 
   <section id="dev_desk_2" class="section pb-0 px-0">
-    {{ range $i, $e := .Params.testimonials }}
-      {{ if $modulo := math.Mod $i 2 }}
-      <div class="py-5 px-6 mx-2">
-        <h2 style="word-break: normal" class="title is-size-5 is-italic">"{{ $e.quote | safeHTML}}"</h2>
-        <div class="columns is-vcentered">
-          <div class="column is-2">
-            <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark ">
-          </div>
-          <div class="subtitle is-italic has-text-primary-dark has-text-weight-medium is-size-4 pt-4 mx-5">
-            {{ $e.author }}
-          </div>
-          <div class="column">
-            <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark">
-          </div>
-        </div>
-      </div>
-      {{ else }}
+    <div className="" style="max-width: 1000px; margin:auto">
+      {{ range $i, $e := .Params.testimonials }}
+        {{ if $modulo := math.Mod $i 2 }}
         <div class="py-5 px-6 mx-2">
           <h2 style="word-break: normal" class="title is-size-5 is-italic">"{{ $e.quote | safeHTML}}"</h2>
-          <div class="columns">
-            <div class="column">
-              <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark">
+          <div class="columns is-vcentered">
+            <div class="column is-2">
+              <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark ">
             </div>
             <div class="subtitle is-italic has-text-primary-dark has-text-weight-medium is-size-4 pt-4 mx-5">
               {{ $e.author }}
             </div>
-            <div class="column is-2">
-              <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark ">
+            <div class="column">
+              <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark">
             </div>
           </div>
         </div>
+        {{ else }}
+          <div class="py-5 px-6 mx-2">
+            <h2 style="word-break: normal" class="title is-size-5 is-italic">"{{ $e.quote | safeHTML}}"</h2>
+            <div class="columns">
+              <div class="column">
+                <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark">
+              </div>
+              <div class="subtitle is-italic has-text-primary-dark has-text-weight-medium is-size-4 pt-4 mx-5">
+                {{ $e.author }}
+              </div>
+              <div class="column is-2">
+                <hr style="border: 1px solid;" class="new subtitle has-text-primary-dark ">
+              </div>
+            </div>
+          </div>
+        {{ end }}
       {{ end }}
-    {{ end }}
-    <div class="has-text-centered py-4">
-      <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
+      <div class="has-text-centered py-4">
+        <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
+      </div>
     </div>
   </section>
 </section>
