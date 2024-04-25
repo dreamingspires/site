@@ -49,7 +49,7 @@ Created in partnership with the Oxford Ideas Festival, Another Oxford is designe
 </div>
 
 Similarly to Oxford Mindmap, its sister app, users can explore an interactive map of the city, but do so along several marked walking tours.
-These tours will take users past areas of interest in the city, where location-specific hallucation events can occur.
+These tours will take users past areas of interest in the city, where location-specific hallucination events can occur.
 
 The walking tour routes reveal the unique culture and history of the city through their destinations, with a backend designed for easy modification and over-the-air updates to the app, allowing new routes and sound effects to be added on the fly.
 

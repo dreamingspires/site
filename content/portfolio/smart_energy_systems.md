@@ -21,7 +21,7 @@ It has a [published paper](https://www.researchgate.net/profile/Thomas-Morstyn/p
 _The network editor UI design draft_
 
 With the aim of improving accessibility of the tool, we’ve considered the impact of the creation of a GUI, enabling non-specialists to model their own energy grids and draw new conclusions.
-Through calls with the existing team and potential users alike, we worked to capture and distil the requirements of the OPEN UI, producing high definition design documents and code architecture reports to guide the ongoing development.
+Through calls with the existing team and potential users alike, we worked to capture and distill the requirements of the OPEN UI, producing high definition design documents and code architecture reports to guide the ongoing development.
 
 <img src="/assets/portfolio/smart_energy_systems/open_options.png" alt="Image with a table of summary of options broken down into developmental stages">
 

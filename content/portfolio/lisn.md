@@ -2,7 +2,7 @@
 title: "Aggregating healthcare feedback for clinical practitioners"
 date: 2021-08-12
 params:
-    author: "Mark Todd, CEO and Software Developer"
+    author: "Mark Todd, Software Developer"
     client: Lisn Healthcare, University of Oxford startup
     img_caption: "/assets/portfolio/lisn/lisn-logo.png"
 ---
