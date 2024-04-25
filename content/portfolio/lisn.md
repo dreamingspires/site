@@ -4,7 +4,7 @@ date: 2021-08-12
 params:
     author: "Mark Todd, Software Developer"
     client: Lisn Healthcare, University of Oxford startup
-    img_caption: "/assets/portfolio/lisn/lisn-logo.png"
+    img_caption: "/assets/portfolio/lisn/lisn_logo.png"
 ---
 
 We collaborated with Lisn, a healthcare startup looking link patients' feedback into actionable changes which are valuable for healthcare professionals.

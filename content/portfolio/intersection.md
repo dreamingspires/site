@@ -4,7 +4,7 @@ date: 2024-04-10
 params:
     author: "Mark Todd, CEO and Software Developer"
     client: Open Source Community
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    img_caption: "/assets/portfolio/python/python_logo.png"
     description: "Discussions around development of an intersection feature for core python"
 ---
 
