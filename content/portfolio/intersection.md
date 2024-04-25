@@ -1,5 +1,5 @@
 ---
-title: "Intersection Type Discussion"
+title: "Developing a Python PEP: Proposing Intersection Types"
 date: 2024-04-10
 params:
     author: "Mark Todd, CEO and Software Developer"
