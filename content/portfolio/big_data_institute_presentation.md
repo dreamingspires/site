@@ -21,12 +21,12 @@ This clearer structure enabled us to make some initial optimisations, and then p
 
 After identifying the blocking steps, we made the following optimisations:
 
-Firstly, we removed any tight Python loop iterations, replacing them with their vectorised numpy equivalents.
-This resulted in a significant speedup!
+Firstly, we removed any tight Python loop iterations, replacing them with their vectorised NumPy equivalents.
+This resulted in a significant speed-up!
 
-After this optimisation, the net slowest function was the sampling of binomial distributions, which was already being implemented through numpy.
-We therefore wrore a custom C++ library for fast array-optimised binomial sampling: [fast-binomial](https://github.com/NTD-Modelling-Consortium/fast-binomial).
-By generating the values in bulk and referencing them lalter in a look-up table, we achieved a further order of magnitude speedup.
+After this optimisation, the net slowest function was the sampling of binomial distributions, which was already being implemented through NumPy.
+We therefore wrote a custom C++ library for fast array-optimised binomial sampling: [fast-binomial](https://github.com/NTD-Modelling-Consortium/fast-binomial).
+By generating the values in bulk and referencing them later in a look-up table, we achieved a further order of magnitude speed-up.
 
 To ensure that our implementation had the same behaviour as the original R model, despite both being stochastic models, we developed [pytest-trust-random](https://github.com/NTD-Modelling-Consortium/pytest-trust-random), a testing suite for comparing the stochastic results between two different models.
 This has been adopted by the [NTD modelling consortium](https://www.ntdmodelling.org/) as a core tool for model development.
