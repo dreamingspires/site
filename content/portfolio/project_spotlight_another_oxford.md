@@ -58,5 +58,5 @@ And if you're curious, or want to make use of our code, you're welcome to: the s
 
 ### Interested in mobile development?
 
-Whatever your project requirements, front or back end, we're sure to be able to find programming talent to suit your needs.
+Whatever your project requirements, front or back end, we're sure to be able to find the right software solution to suit your needs.
 So go on, simply register your project with us to get started!
