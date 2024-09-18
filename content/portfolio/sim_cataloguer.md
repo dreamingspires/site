@@ -3,7 +3,8 @@ title: "Generating AI images inspired by authors' writing styles"
 date: 2023-03-24
 params:
     author: "Mark Todd, CEO and Software Developer"
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    client: Digital Humanities, University of Southampton
+    img_caption: "/assets/portfolio/sim_cataloguer/southampton_logo.png"
     description: "Packaging pixray and other gpt tools into a simple python interface"
 ---
 

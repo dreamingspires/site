@@ -5,6 +5,6 @@ params:
     author: "Mark Todd, CEO and Software Developer"
     client: King's College London
     client_url: https://kcl.ac.uk/
-    img_caption: "/assets/portfolio/default_portfolio.png"
+    img_caption: "/assets/portfolio/matchmaker/kings_logo.png"
     no_url: true
 ---

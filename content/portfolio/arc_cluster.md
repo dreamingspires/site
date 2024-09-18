@@ -28,5 +28,5 @@ Our code has been running successfully on ARC for several months, with a very hi
 Where changes in the underlying auction site caused exceptions, our code failed gracefully, giving our engineers time to resolve the issue through a patch the following day.
 
 At Dreaming Spires, we're dedicated to helping your project succeed.
-That's why we offer a free three-month bug testing period with all of our projects be default, and will help you set up hosting long term - whether that's with us, or your institituion.
+That's why we offer a free three-month bug testing period with all of our projects be default, and will help you set up hosting long term - whether that's with us, or your institution.
 Our experienced engineers will be able to advise you as to what hosting methods best suit your needs.

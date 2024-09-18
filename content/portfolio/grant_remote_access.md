@@ -12,7 +12,7 @@ This presents a unique challenge for server-side applications, which often form 
 
 <script id="asciicast-2GwGhmjWMhLYCOJm4xXk3ifmn" src="https://asciinema.org/a/2GwGhmjWMhLYCOJm4xXk3ifmn.js" async></script>
 
-To help address this problem, and to enable researchers to better take advantage of their organisation’s free or low-cost server computing facilities, we’ve created an open source tool, [_grant\_remote\_access_](https://gist.github.com/eddsalkield/fbbf892dff417cffb4aaac4b91062997), for temporary remote assistance of Linux servers.
+To help address this problem, and to enable researchers to better take advantage of their organisation's free or low-cost server computing facilities, we’ve created an open source tool, [_grant\_remote\_access_](https://gist.github.com/eddsalkield/fbbf892dff417cffb4aaac4b91062997), for temporary remote assistance of Linux servers.
 If a host user runs the tool, it opens a tunnel through which authorised users at Dreaming Spires can temporarily log in to the system through a shared, monitored, and terminable session.
 The host can monitor and view in real-time all the commands that are being run, and are fully empowered to close the session at any point.
 The result is that we can provide secure remote access support on any Linux system, helping to train users as we go!

@@ -19,12 +19,12 @@ We've taken it upon ourselves to revive mMass to its former glory.
 ### The Python2 problem
 
 Since 2014, Python 2.7 has been in the process of being deprecated in favour of Python 3, with the final sunset date having been [earlier this year](https://www.python.org/dev/peps/pep-0373/#update).
-In the transition from Python 2 to Python 3, [many breaking changes](https://www.wxpython.org/Phoenix/docs/html/MigrationGuide.html) were made to the langauge specification to keep Python more consistent and useful into the future.
+In the transition from Python 2 to Python 3, [many breaking changes](https://www.wxpython.org/Phoenix/docs/html/MigrationGuide.html) were made to the language specification to keep Python more consistent and useful into the future.
 
 However, where there are breaking changes, there are also projects that lack maintainers that start breaking.
 With operating system vendors requiring that software does not depend upon Python 2 where possible, and many people no longer running Python 2 interpreters on their machines, projects like mMass became harder to run.
 
-Breaking changes also affected the Python extension modules interface, where code written in other langauges to interface with the interpreter became unusable throughout the update.
+Breaking changes also affected the Python extension modules interface, where code written in other languages to interface with the interpreter became unusable throughout the update.
 Additionally, many libraries took the opportunity of this transition period to overhaul themselves and push through fundamental changes.
 Both of these further issues affected mMass.
 
