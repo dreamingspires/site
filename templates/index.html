@@ -39,36 +39,8 @@
           <div class="columns is-centered">
             <div class="column is-10-widescreen">
               <div class="is-flex is-flex-direction-column is-flex-wrap-nowrap">
-                <p class="is-size-5 has-text-weight-semibold">Perfect for Researchers...</p>
-                {{ range .Params.welcome_page.researcher_reasons }}
-                <div class="columns is-mobile">
-                  <div class="column is-narrow">
-                    <span class="icon has-text-warning">
-                      <i class="fas fa-check"></i>
-                    </span>
-                  </div>
-                  <div class="column">
-                    <p class="has-text-left">
-                      {{ . }}
-                    </p>
-                  </div>
-                </div>
-                {{ end }}
-                <p class="has-text-centered pt-4">Find out more as...</p>
-                <a  href="./our_services#register_client" class="is-align-self-center button is-medium is-warning has-background-warning-dark is-rounded">
-                  A Researcher
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="column is-1 is-2-fullhd"></div>
-        <div class="column has-text-light">
-          <div class="columns is-centered">
-            <div class="column is-10-widescreen">
-              <div class="is-flex is-flex-direction-column is-flex-wrap-nowrap">
-                <p class="is-size-5 has-text-weight-semibold">Ideal for Developers...</p>
-                {{ range .Params.welcome_page.developer_reasons }}
+                <p class="is-size-4 has-text-weight-semibold">We work flexibly to your needs</p>
+                {{ range .Params.welcome_page.ways_we_work }}
                 <div class="columns is-mobile">
                   <div class="column is-narrow">
                     <span class="icon has-text-primary">
@@ -82,11 +54,31 @@
                   </div>
                 </div>
                 {{ end }}
-
-                <p class="has-text-centered pt-4">Find out more as...</p>
-                <a href="./develop_with_us#register_developer" class="is-align-self-center button is-medium is-primary has-text-black has-background-primary-dark is-rounded">
-                  A Developer
-                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column is-1 is-2-fullhd"></div>
+        <div class="column has-text-light">
+          <div class="columns is-centered">
+            <div class="column is-10-widescreen">
+              <div class="is-flex is-flex-direction-column is-flex-wrap-nowrap">
+                <p class="is-size-4 has-text-weight-semibold">Our Specialisms</p>
+                {{ range .Params.welcome_page.specialisms }}
+                <div class="columns is-mobile">
+                  <div class="column is-narrow">
+                    <span class="icon has-text-warning">
+                      <i class="fas fa-check"></i>
+                    </span>
+                  </div>
+                  <div class="column">
+                    <p class="has-text-left mb-0">
+                      {{ .name }}
+                    </p>
+                    <i><a class="has-text-primary is-underlined" href={{ .link }}>({{ .link_text }})</a></i>
+                  </div>
+                </div>
+                {{ end }}
               </div>
             </div>
 
