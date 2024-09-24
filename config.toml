@@ -8,9 +8,9 @@ company_name = "Dreaming Spires Software Development Ltd"
 [params.nav]
 navbar = [
     { url = "/", name = "Home" },
-    { url = "/portfolio", name = "Portfolio" },
+    { url = "/portfolio", name = "Our Projects" },
     { url = "/our_clients", name = "Our Clients" },
-    { url = "/develop_with_us", name = "Develop with Us" }
+    { url = "/careers", name = "Careers" }
 ]
 
 hotlinks = [
@@ -20,9 +20,10 @@ hotlinks = [
 footer = [
     { url = "/", name = "Home" },
     { url = "/our_services", name = "Our Services" },
-    { url = "/portfolio", name = "Portfolio" },
-    { url = "/develop_with_us", name = "Develop with Us" },
-    { url = "/contact", name = "Contact" }
+    { url = "/portfolio", name = "Our Projects" },
+    { url = "/careers", name = "Careers" },
+    { url = "/contact", name = "Contact" },
+    { url = "/privacy_policy", name = "Privacy Policy" }
 ]
 
 [permalinks]
