@@ -1,0 +1,13 @@
+{{ define "head" }}
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url={{ .Params.redirect_url }}">
+<script type="text/javascript">
+    window.location.href = {{ .Params.redirect_url }}
+</script>
+<title>Page Redirection</title>
+{{ end }}
+
+{{ define "body" }}
+If you are not redirected automatically, follow this <a href={{ .Params.redirect_url }}>link to the {{ .Params.page_name }}</a>.
+
+{{ end }}
