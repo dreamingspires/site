@@ -19,8 +19,8 @@ hotlinks = [
 
 footer = [
     { url = "/", name = "Home" },
-    { url = "/our_services", name = "Our Services" },
     { url = "/portfolio", name = "Our Projects" },
+    { url = "/our_clients", name = "Our Clients" },
     { url = "/careers", name = "Careers" },
     { url = "/contact", name = "Contact" },
     { url = "/privacy_policy", name = "Privacy Policy" }
