@@ -37,6 +37,7 @@
     <div class="container is-max-widescreen">
       <div id="timeline">
         {{ $maxindex := -1 }}
+        {{ $colmaxgrid:= 1}}
         {{ range $newindex, $item := .Params.timeline }}
         {{ range $subindex, $entry := $item.details }}
           {{ $maxindex = (math.Add $maxindex 1)}}
@@ -47,7 +48,8 @@
         <div class="py-2 px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 1 }} / {{ math.Add (math.Mul $index 3) 2 }}" class="has-text-centered">
           <span class="is-size-1" style="font-family: 'Impact', 'Anton', 'Arial Narrow Bold', sans-serif; color: {{ index $item "colour" }}">{{ $item.year }}</span>
         </div>
-        <div class="px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 2 }} / {{ math.Add (math.Mul $index 3) 4 }};">
+        {{ $colmaxgrid = (math.Add (math.Mul (len $item.details) 3) $colmaxgrid)}}
+        <div class="px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 2 }} / {{ $colmaxgrid }};">
           {{ if (ne $index $maxindex) }}
           <div style="border-left: 1px solid {{ index $item "colour" }}; border-right: 1px solid  {{ index $item "colour" }}; width: 0%; height: 100%; min-height: 6rem;"></div>
           {{ else }}
