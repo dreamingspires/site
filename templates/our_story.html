@@ -1,3 +1,7 @@
+{{ define "fullheight" }}
+  {{ partial "landing.html" "" | safeHTML }}
+{{ end }}
+
 {{ define "body" }}
 <section id="page_2" class="section is-fullwidth is-medium has-background-light pt-6 pb-0 px-6">
   <div class="block has-text-centered mb-6">
@@ -85,4 +89,6 @@
     <a href="#signup" class="title is-2 fas fa-chevron-down has-text-info"></a>
   </div>
 </section>
+{{ partial "signup.html" . | safeHTML }}
+
 {{ end }}
