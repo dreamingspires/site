@@ -7,23 +7,24 @@
 <section id="contact" class="section has-background-info has-text-light pb-0">
   <div class="columns px-3">
     <div class="column is-8">
-      Contact Us at contact@dreamingspires.dev
+      <h1 class="has-text-light title is-3">Contact Us</h1>
+      <p class="subtitle is-5 subtitle-on-dark has-text-weight-normal is-italic">For all enquiries software-related or otherwise, please email us at: contact@dreamingspires.dev</p>
+      <p>If you need to contact a member of our team more specifically, please see below.</p>
     </div>
   </div>
-  <div class="has-text-centered py-4">
+  <div class="has-text-centered">
     <a href="#core_team" class="title is-2 fas fa-chevron-down has-text-light"></a>
   </div>
 </section>
+
 <section id="core_team">
-  <div class="columns">
-    <div class="column">
-    </div>
-    <div class="column is-6">
+  <div>
+    <div class="is-6 pb-4" style="width: 800px; margin:auto">
       <div>
-        <h1 class="title is-2 has-text-centered py-2">Our Team</h1>
+        <h1 class="title is-1 has-text-centered py-4">Our Team</h1>
       </div>
       {{ range $index, $person := .Params.people }}
-      <div class="columns">
+      <div class="columns py-4">
         {{ if eq (math.Mod $index 2) 0 }}
         <div class="column is-6 ">
           <div class="circle-image-container">
@@ -31,11 +32,30 @@
           </div>
         </div>
         <div class="column is-6">
-          {{ $person.name }}
+          <h3 class="title mb-2">{{ $person.name }}</h3>
+          <h4 class="has-text-info is-italic mb-2">{{ $person.title }}</h4>
+          {{ if $person.email }}
+          <div class="is-3 py-1 has-text-weight-bold">
+              Contact: <a href="mailto:{{ $person.email }}" class="has-text-info">{{ $person.email }}</a>
+          </div>
+          {{ end }}
+          <div class="py-1">
+            {{ $person.info }}
+          </div>
         </div>
         {{ else }}
+
         <div class="column is-6">
-          {{ $person.name }}
+          <h3 class="title mb-2">{{ $person.name }}</h3>
+          <h4 class="has-text-info is-italic mb-2">{{ $person.title }}</h4>
+          {{ if $person.email }}
+          <div class="is-3 py-1 has-text-weight-bold">
+              Contact: <a href="mailto:{{ $person.email }}" class="has-text-info">{{ $person.email }}</a>
+          </div>
+          {{ end }}
+          <div class="py-1">
+            {{ $person.info }}
+          </div>
         </div>
         <div class="column is-6 ">
           <div class="circle-image-container">
@@ -47,9 +67,11 @@
       {{ end }}
 
     </div>
-
-    <div class="column">
-    </div>
+  </div>
+  <div class="has-text-centered">
+    <a href="#signup" class="title is-2 fas fa-chevron-down has-text-dark"></a>
   </div>
 </section>
+{{ partial "signup.html" . | safeHTML }}
+
 {{ end}}
