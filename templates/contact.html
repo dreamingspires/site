@@ -4,9 +4,9 @@
 
 
 {{ define "body" }}
-<section id="contact" class="section has-background-info has-text-light pb-0">
-  <div class="columns px-3">
-    <div class="column is-8">
+<section id="contact" class="section has-background-info has-text-light pb-1">
+  <div class="px-3">
+    <div class="is-8">
       <h1 class="has-text-light title is-3">Contact Us</h1>
       <p class="subtitle is-5 subtitle-on-dark has-text-weight-normal is-italic">For all enquiries software-related or otherwise, please email us at: contact@dreamingspires.dev</p>
       <p>If you need to contact a member of our team more specifically, please see below.</p>
@@ -17,8 +17,10 @@
   </div>
 </section>
 
-<section id="core_team">
-  <div>
+
+<section id="core_team" class="section pb-0 pt-3">
+  <!-- Desktop team -->
+  <div class="is-hidden-touch is-hidden-desktop-only">
     <div class="is-6 pb-4" style="width: 800px; margin:auto">
       <div>
         <h1 class="title is-1 has-text-centered py-4">Our Team</h1>
@@ -66,6 +68,34 @@
       </div>
       {{ end }}
 
+    </div>
+  </div>
+
+  <!-- Mobile team -->
+  <div class="is-hidden-widescreen">
+    <div class="is-6 pb-4">
+      <div>
+        <h2 class="title is-2 has-text-centered py-4">Our Team</h2>
+      </div>
+      {{ range .Params.people }}
+        <div class="p-5">
+          <div class="has-text-centered">
+            <h4 class="title mb-2 is-3 py-2">{{ .name }}</h4>
+            <h4 class="has-text-info is-italic mb-2">{{ .title }}</h4>
+            {{ if .email }}
+            <div class="is-3 py-1 has-text-weight-bold">
+                Contact: <a href="mailto:{{ .email }}" class="has-text-info">{{ .email }}</a>
+            </div>
+            {{ end }}
+            <div class="circle-image-container-mobile has-text-centered my-4 auto-margin">
+              <img src={{ .image }} alt={{ .name }}>
+            </div>
+          </div>
+          <div class="mobile-info">
+            {{ .info}}
+          </div>
+        </div>
+      {{ end }}
     </div>
   </div>
   <div class="has-text-centered">

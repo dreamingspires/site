@@ -302,3 +302,25 @@ ul {
     height: 100%;
     object-fit: cover;
 }
+
+.circle-image-container-mobile {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle-image-container-mobile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mobile-info {
+    max-width: 400px;
+    margin: auto;
+}
+
+.auto-margin {
+    margin: auto;
+}

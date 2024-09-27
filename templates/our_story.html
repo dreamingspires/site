@@ -11,7 +11,7 @@
 
 	<!-- Mobile timeline -->
   <div class="content">
-    <div class="columns is-centered is-hidden-desktop mt-2">
+    <div class="columns is-centered is-hidden-widescreen mt-2">
       <div class="column is-11">
         {{ range $index, $entry := .Params.timeline }}
         {{ range $subindex, $subentry := $entry.details }}
@@ -37,7 +37,7 @@
   </div>
 
   <!-- Desktop timeline -->
-  <div class="content is-size-5 is-hidden-touch">
+  <div class="content is-size-5 is-hidden-touch is-hidden-desktop-only">
     <div class="container is-max-widescreen">
       <div id="timeline">
         {{ $maxindex := -1 }}
