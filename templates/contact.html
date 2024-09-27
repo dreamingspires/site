@@ -2,6 +2,54 @@
   {{ partial "landing.html" "" | safeHTML }}
 {{ end }}
 
-<div>
-    Contact Us at contact@dreamingspires.dev
-</div>
+
+{{ define "body" }}
+<section id="contact" class="section has-background-info has-text-light pb-0">
+  <div class="columns px-3">
+    <div class="column is-8">
+      Contact Us at contact@dreamingspires.dev
+    </div>
+  </div>
+  <div class="has-text-centered py-4">
+    <a href="#core_team" class="title is-2 fas fa-chevron-down has-text-light"></a>
+  </div>
+</section>
+<section id="core_team">
+  <div class="columns">
+    <div class="column">
+    </div>
+    <div class="column is-6">
+      <div>
+        <h1 class="title is-2 has-text-centered py-2">Our Team</h1>
+      </div>
+      {{ range $index, $person := .Params.people }}
+      <div class="columns">
+        {{ if eq (math.Mod $index 2) 0 }}
+        <div class="column is-6 ">
+          <div class="circle-image-container">
+            <img src={{ $person.image }} alt={{ $person.name }}>
+          </div>
+        </div>
+        <div class="column is-6">
+          {{ $person.name }}
+        </div>
+        {{ else }}
+        <div class="column is-6">
+          {{ $person.name }}
+        </div>
+        <div class="column is-6 ">
+          <div class="circle-image-container">
+            <img src={{ $person.image }} alt={{ $person.name }}>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+    </div>
+
+    <div class="column">
+    </div>
+  </div>
+</section>
+{{ end}}
