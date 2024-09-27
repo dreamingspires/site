@@ -18,6 +18,19 @@
     <a href="#page_1" class="title is-2 fas fa-chevron-down has-text-white"></a>
   </div>
 </div>
+<div class="black-back">
+  <logo-slider>  
+    <div>
+      {{ range .Params.welcome_page.carousel }}
+      <img src={{ .asset }}>
+      {{ end }}
+      {{ range .Params.welcome_page.carousel }}
+      <img src={{ .asset }}>
+      {{ end }}
+    </div>
+    
+  </logo-slider>
+</div>
 {{ end }}
 
 {{ define "body" }}
