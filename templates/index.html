@@ -9,14 +9,15 @@
       </div>
     </div>
   </div>
-  <div class="is-hidden-touch mt-6 pt-5"></div>
+  <div class="is-hidden-touch mt-3 pt-3"></div>
   <div class="is-hidden-touch" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
   </div>
   <div class="is-hidden-desktop" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
   </div>
 
 </div>
-<div class="black-back">
+<!-- Desktop slider -->
+<div class="black-back is-hidden-touch">
   <logo-slider>  
     <div>
       {{ range .Params.welcome_page.carousel }}
@@ -26,8 +27,20 @@
       <img src={{ .asset }}>
       {{ end }}
     </div>
-    
   </logo-slider>
+</div>
+<!-- Mobile slider -->
+<div class="black-back is-hidden-desktop">
+  <logo-slider-mobile>  
+    <div>
+      {{ range .Params.welcome_page.carousel }}
+      <img src={{ .asset }}>
+      {{ end }}
+      {{ range .Params.welcome_page.carousel }}
+      <img src={{ .asset }}>
+      {{ end }}
+    </div>
+  </logo-slider-mobile>
 </div>
 <div class="has-text-centered pb-1" style="margin-top: -10px; background-color: black;">
   <a href="#page_1" class="title is-2 fas fa-chevron-down has-text-white"></a>
