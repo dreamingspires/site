@@ -1,5 +1,5 @@
 {{ define "fullheight" }}
-<div class="hero-body px-0 py-0 is-flex is-flex-direction-column" style="background-image: linear-gradient(white 15%, #c9ffff 80%); background-size:cover; background-position:top;">
+<div class="hero-body px-0 py-0 is-flex is-flex-direction-column index-grad-back">
   <div class="section mt-4 mb-0">
     <div class="columns is-mobile is-centered">
       <div class="column is-11-mobile is-three-quarters-tablet is-two-thirds-desktop is-half-widescreen is-5-fullhd has-text-centered">
@@ -10,21 +10,20 @@
     </div>
   </div>
   <div class="is-hidden-touch mt-3 pt-3"></div>
-  <div class="is-hidden-touch" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom; background-repeat: repeat-x; background-size: contain; height: 200px">
+  <div class="is-hidden-touch index-skyline">
   </div>
-  <div class="is-hidden-desktop" style="background-image: url('/assets/images/backgrounds/oxford_skyline_full.svg'); background-position: bottom left; background-repeat: repeat-x; background-size: cover; height: 200px">
+  <div class="is-hidden-desktop index-skyline-mobile">
   </div>
-
 </div>
 <!-- Desktop slider -->
 <div class="black-back is-hidden-touch">
   <logo-slider>  
     <div>
       {{ range .Params.welcome_page.carousel }}
-      <img src={{ .asset }}>
+      <a href={{ .link }}><img src={{ .asset }}></a>
       {{ end }}
       {{ range .Params.welcome_page.carousel }}
-      <img src={{ .asset }}>
+      <a href={{ .link }}><img src={{ .asset }}></a>
       {{ end }}
     </div>
   </logo-slider>
@@ -34,10 +33,10 @@
   <logo-slider-mobile>  
     <div>
       {{ range .Params.welcome_page.carousel }}
-      <img src={{ .asset }}>
+      <a href={{ .link }}><img src={{ .asset }}></a>
       {{ end }}
       {{ range .Params.welcome_page.carousel }}
-      <img src={{ .asset }}>
+      <a href={{ .link }}><img src={{ .asset }}></a>
       {{ end }}
     </div>
   </logo-slider-mobile>
