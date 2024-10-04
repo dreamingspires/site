@@ -2,3 +2,5 @@ node_modules/
 public/
 site.tar.gz
 .vscode/
+config.toml
+.env

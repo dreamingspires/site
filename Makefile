@@ -4,7 +4,7 @@ npm:
 	npm install
 
 site:
-	kiln build
+	python3 get_environment.py;kiln build
 
 clean:
 	rm -r ./public/*
