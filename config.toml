@@ -22,6 +22,7 @@ footer = [
     { url = "/", name = "Home" },
     { url = "/portfolio", name = "Our Projects" },
     { url = "/our_clients", name = "Our Clients" },
+    { url = "/our_story", name = "Our Story" },
     { url = "/careers", name = "Careers" },
     { url = "/contact", name = "Contact" },
     { url = "/privacy_policy", name = "Privacy Policy" }

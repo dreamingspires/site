@@ -8,7 +8,7 @@
 
 {{ define "body" }}
 <section class="is-hidden-touch">
-  <section id="register_developer" class="section has-background-info has-text-light pb-0">
+  <section id="header" class="section has-background-info has-text-light pb-0">
     <div class="columns px-3">
       <div class="column is-8">
         {{ .Params.welcome_text | safeHTML }}
@@ -17,11 +17,11 @@
 
 
     <div class="has-text-centered">
-      <a href="#dev_desk_2" class="title is-2 fas fa-chevron-down has-text-light"></a>
+      <a href="#our_clients" class="title is-2 fas fa-chevron-down has-text-light"></a>
     </div>
   </section>
 
-  <section id="dev_desk_2" class="section pb-0 px-0">
+  <section id="our_clients" class="section pb-0 px-0">
     <div className="" style="max-width: 1000px; margin:auto">
       {{ range $i, $e := .Params.testimonials }}
         {{ if $modulo := math.Mod $i 2 }}
@@ -65,7 +65,7 @@
 
 <!-- MOBILE -->
 <section class="is-hidden-desktop">
-  <section id="register_developer" class="section has-background-info has-text-light pb-0">
+  <section id="header" class="section has-background-info has-text-light pb-0">
     <div class="columns px-3">
       <div class="column is-8">
         {{ .Params.welcome_text | safeHTML }}
@@ -73,11 +73,11 @@
     </div>
 
     <div class="has-text-centered">
-      <a href="#dev_desk_2" class="title is-2 fas fa-chevron-down has-text-light"></a>
+      <a href="#our_clients" class="title is-2 fas fa-chevron-down has-text-light"></a>
     </div>
   </section>
 
-  <section id="dev_desk_2" class="section pb-0 px-0">
+  <section id="our_clients" class="section pb-0 px-0">
     {{ range $i, $e := .Params.testimonials }}
       <div class="py-5 px-6 mx-2">
         <h2 style="word-break: normal" class="title is-size-5 is-italic">"{{ $e.quote | safeHTML}}"</h2>
