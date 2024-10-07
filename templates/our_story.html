@@ -54,7 +54,7 @@
         {{ $index := 0 }}
         {{ range $newindex, $item := .Params.timeline }}
         <div class="py-2 px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 1 }} / {{ math.Add (math.Mul $index 3) 2 }}" class="has-text-centered">
-          <span class="is-size-1" style="font-family: 'Impact', 'Anton', 'Arial Narrow Bold', sans-serif; color: {{ index $item "colour" }}">{{ $item.year }}</span>
+          <span class="is-size-1" style="font-weight: bold; font-family: 'Gilroy Bold', 'Anton', 'Arial Narrow Bold', sans-serif; color: {{ index $item "colour" }}">{{ $item.year }}</span>
         </div>
         {{ $colmaxgrid = (math.Add (math.Mul (len $item.details) 3) $colmaxgrid)}}
         <div class="px-6" style="grid-column: 2 / 3; grid-row: {{ math.Add (math.Mul $index 3) 2 }} / {{ $colmaxgrid }};">
