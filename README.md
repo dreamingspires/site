@@ -23,6 +23,7 @@ Form submission handled via CORS request to [staticforms](https://github.com/dre
 * [entr](https://eradman.com/entrproject/) - used for watch.sh to rebuild files as they change
 * fuse-libs - required for image magick; install with: `sudo dnf install fuse-libs`
 * [imagemagick](https://imagemagick.org/) - used to compress images
+* [python](https://www.python.org/downloads/) - used to add environment variable to toml
 
 Install these preferably with your system package manager.
 
