@@ -1,5 +1,5 @@
 ---
-title: "Redevloping mass spectrometry tools for paleoproteomic applications"
+title: "Redeveloping mass spectrometry tools for paleoproteomic applications"
 date: 2020-09-21
 params:
   author: "Edd Salkield"

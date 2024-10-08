@@ -11,7 +11,7 @@ params:
 
 Earlier this year we translated the EPIONCHO-IBM model from R to python, and restructured it's code to improve code clarity. In this project, we developed this further, to optimise the speed of the EPIONCHO model. This led us to vectorise many of the functions in the model.
 
-The next bottleneck in the problem was the sampling of binomial distributions. We sped this up significantly, by pregenerating the samples using C++ bindings, and a new plugin called "Fast Binomial".
+The next bottleneck in the problem was the sampling of binomial distributions. We sped this up significantly, by pre-generating the samples using C++ bindings, and a new plugin called "Fast Binomial".
 
 We also then abstracted the most generic parts of the disease model, into a separate library called "Endgame Simulations". The idea is that all of the code that can be applied to multiple diseases is kept in a separate repo, and becomes a module in itself.
 
