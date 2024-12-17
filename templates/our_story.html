@@ -27,10 +27,10 @@
             </div>
             <div class="column is-9">
               <h2 class="subtitle is-3 has-text-weight-semibold mb-2">
-                {{ .title }}
+                {{ .title | safeHTML }}
               </h2>
               <p>
-                {{ .text }}
+                {{ .text | safeHTML }}
               </p>
             </div>
           </div>
